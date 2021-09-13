@@ -1,0 +1,13 @@
+@import "./variables";
+
+.mixinTitle(@font-size: 38px, @tablet-font-size: 24px, @font-weight: 600, @screen-width: @tablet) {
+    color:          @gray1;
+    letter-spacing: 0.015em;
+    font-size:      @font-size;
+    line-height:    1.4;
+    font-weight:    @font-weight;
+    
+    @media only screen and (max-width: (@screen-width)) {
+        font-size: @tablet-font-size;
+    }
+}

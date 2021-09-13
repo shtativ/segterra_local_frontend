@@ -1,0 +1,135 @@
+@import '../../styles/utils/variables';
+
+.ranger-line {
+    display:         flex;
+    justify-content: flex-start;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        flex-direction: column;
+    }
+}
+
+.ranger-item {
+    margin: 0 0 25px 40px;
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 0 25px 0;
+    }
+}
+
+.ranger-item:first-child {
+    margin: 0 0 35px 0;
+}
+
+.ranger {
+    display:      inline-block;
+    position:     relative;
+    line-height:  40px;
+    height:       40px;
+    user-select:  none;
+    touch-action: manipulation;
+    box-sizing:   border-box;
+    
+    &__information {
+        display:         flex;
+        align-items:     center;
+        justify-content: space-between;
+    }
+    
+    &__label {
+        width:          207px;
+        display:        block;
+        padding-bottom: 10px;
+    }
+}
+
+.ranger-track {
+    background-color: @gray5;
+    position:         relative;
+    cursor:           pointer;
+    width:            100%;
+    height:           4px;
+    margin-left:      32px;
+    z-index:          1;
+    
+    &__wrap {
+        width: 175px;
+    }
+    
+    &:hover &__handle::before {
+        transform: translate(-50%, -50%);
+        opacity:   0.1;
+    }
+    
+    &__distance {
+        height:           inherit;
+        background-color: @primary;
+        position:         relative;
+        left:             0;
+        bottom:           0;
+        width:            0;
+    }
+    
+    &__handle {
+        transition:       all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        transform:        translateY(50%);
+        border:           2px solid @primary;
+        position:         absolute;
+        background-color: @primary;
+        right:            -8px;
+        bottom:           50%;
+        height:           15px;
+        width:            15px;
+        border-radius:    50%;
+        z-index:          1;
+        
+        &::before {
+            transition:       all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+            transform:        translate(-50%, -50%);
+            background-color: @primary;
+            position:         absolute;
+            border-radius:    inherit;
+            height:           36px;
+            width:            36px;
+            opacity:          0;
+            top:              50%;
+            left:             50%;
+            content:          "";
+        }
+    }
+    
+    &__icon {
+        left:       0;
+        bottom:     -18px;
+        position:   absolute;
+        background: url("../assets/img/calendar_icon.png") no-repeat;
+        width:      14px;
+        height:     14px;
+    }
+}
+
+.icon-clock {
+    background: url("../assets/img/clock.png") no-repeat;
+}
+
+.ranger-indicator {
+    position: relative;
+    
+    &__value {
+        font-weight:    600;
+        font-size:      16px;
+        color:          @gray1;
+        letter-spacing: 0.16px;
+        font-family:    "Open Sans", Arial, sans-serif;
+    }
+}
+
+.ranger--clear {
+    .ranger-track__handle {
+        border:           2px solid @primary;
+        background-color: #ffffff;
+    }
+    
+    .ranger-indicator__value {
+        color: #c3c8cd;
+    }
+}

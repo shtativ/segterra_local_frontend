@@ -1,0 +1,57 @@
+@import '../../styles/utils/variables';
+
+//for now - for index only!
+body, html {
+    height: 100%;
+}
+
+.wrapper {
+    position:   relative;
+    max-width:  1400px;
+    overflow:   hidden;
+    min-height: 450px;
+    display:    flex;
+    height:     auto;
+    
+    @media only screen  and(max-width: (@max_width)) {
+        overflow: scroll;
+    }
+}
+
+.fixpanel {
+    border-right: 1px solid @gray2;
+    width:        @width_panel;
+    position:     relative;
+    padding:      30px;
+    
+    li {
+        padding: 5px 0;
+    }
+}
+
+.container-right {
+    width:       -webkit-calc(~'100% - 323px');
+    width:       -moz-calc(~'100% - 323px');
+    width:       -o-calc(~'100% - 323px');
+    width:       calc(~'100% - 323px');
+    padding:     30px 30px 200px;
+    margin-left: auto;
+    overflow-y:  auto;
+}
+
+//test from segplan
+.container-770 {
+    min-width:  @width_panel;
+    box-sizing: border-box;
+    margin:     0 auto;
+    max-width:  770px;
+    width:      100%;
+    
+    @media only screen  and(max-width: (@desktop)) {
+        padding: 0 16px;
+    }
+}
+
+.container--center {
+    text-align: center;
+}

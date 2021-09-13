@@ -1,0 +1,313 @@
+@import "../../utils/common";
+
+// header begin
+.header {
+    background:  @blue;
+    padding:     22px 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    position:    fixed;
+    top:         0;
+    width:       100%;
+    z-index:     3;
+    
+    @media screen and (max-width: (@mid_mobile)) {
+        padding: 10px 0;
+    }
+    
+    &__container {
+        display:         flex;
+        align-items:     center;
+        justify-content: space-between;
+        padding:         0 16px;
+        max-width:       @desktop;
+        margin:          0 auto;
+        position:        relative;
+    }
+    
+    &__overlay {
+        display:   flex;
+        flex-grow: 1;
+        z-index:   1;
+        
+        @media screen and (max-width: (@big_width)) {
+            position:   fixed;
+            top:        0;
+            left:       0;
+            right:      0;
+            height:     100%;
+            background: rgba(0, 0, 0, .2);
+            display:    none;
+            animation:  fadeIn .2s ease-in;
+        }
+        
+        &.show {
+            
+            @media screen and (max-width: (@big_width)) {
+                display:    block;
+                overflow-y: auto;
+            }
+        }
+    }
+    
+    &__wrapper {
+        display:         flex;
+        align-items:     center;
+        flex-grow:       1;
+        justify-content: flex-end;
+        
+        @media screen and (max-width: (@big_width)) {
+            position:       relative;
+            flex-direction: column;
+            align-items:    center;
+            min-height:     100%;
+            background:     #ffffff;
+            padding:        15px 30px 70px;
+            text-align:     center;
+            flex-grow:      0;
+            display:        inline-block;
+            box-sizing:     border-box;
+        }
+    }
+    
+    .show &__wrapper {
+        
+        @media screen and (max-width: (@big_width)) {
+            animation: toRight .2s ease-in;
+        }
+    }
+    
+    &__logo {
+        fill:    #ffffff;
+        display: block;
+        width:   142px;
+        height:  70px;
+        margin:  0 auto;
+        
+        @media screen and (max-width: (@big_width)) {
+            width:       120px;
+            margin:      0 auto;
+            padding-top: 6px;
+        }
+    }
+    
+    &__icon {
+        cursor:    pointer;
+        position:  absolute;
+        top:       50%;
+        left:      4%;
+        fill:      #ffffff;
+        width:     26px;
+        height:    26px;
+        transform: translateY(-50%);
+        display:   none;
+        
+        @media screen and (max-width: (@big_width)) {
+            display: block;
+        }
+    }
+    
+    &__questions {
+        margin-top: 33px;
+        
+        @media screen and (min-width: (@big_width)) {
+            display: none;
+        }
+        
+        &-title {
+            font-weight:    600;
+            font-size:      14px;
+            margin-bottom:  6px;
+            text-transform: uppercase;
+        }
+        
+        .link {
+            font-size: 14px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.logo {
+    fill:    #ffffff;
+    display: block;
+    width:   142px;
+    height:  70px;
+    margin:  0 auto;
+    
+    @media screen and (max-width: (@mid_mobile)) {
+        height: 60px;
+    }
+}
+
+.authpanel {
+    display: flex;
+    padding: 1px;
+    
+    @media screen and (max-width: (@desktop)) {
+        margin-left: 2%;
+    }
+    
+    @media screen and (max-width: (@big_width)) {
+        flex-direction: column;
+        margin-left:    0;
+    }
+    
+    .btn-login--icon {
+        margin-left: 30px;
+        padding-top: 14px;
+        width:       32px;
+        height:      32px;
+        
+        @media screen and (max-width: (@big_width)) {
+            display: none;
+        }
+    }
+    
+    .btn-login--btn,
+    .btn-white--blue {
+        
+        @media screen and (max-width: (@big_width)) {
+            width: 197px;
+        }
+    }
+    
+    .btn-login--btn {
+        margin: 30px auto 0;
+    }
+}
+
+.navbar {
+    
+    margin: 0 auto 0 57px;
+    
+    @media screen and (max-width: (@desktop)) {
+        margin-left:   auto;
+        padding-right: 30px;
+    }
+    
+    @media screen and (max-width: (@big_width)) {
+        padding-right: 0;
+    }
+    
+    &__logo {
+        fill:  @blue;
+        width: 124px;
+        
+        @media screen and (min-width: (@big_width)) {
+            display: none;
+        }
+        
+        .logo {
+            fill: @blue;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        
+        @media screen and (max-width: (@big_width)) {
+            flex-direction: column;
+            padding-bottom: 40px;
+            margin:         50px auto 0;
+        }
+    }
+    
+    &__item + &__item {
+        margin-left: 30px;
+        
+        @media screen and (max-width: (@desktop)) {
+            margin-left: 2%;
+        }
+        
+        @media screen and (max-width: (@big_width)) {
+            margin: 25px 0 0;
+        }
+    }
+    
+    &__link {
+        color:          #ffffff;
+        text-transform: uppercase;
+        font-size:      14px;
+        line-height:    1.92;
+        font-weight:    700;
+        padding-bottom: 8px;
+        letter-spacing: .1em;
+        white-space:    nowrap;
+        font-family:    "Open Sans", Arial, sans-serif;
+        transition:     all 0.2s ease-in-out;
+        position:       relative;
+        
+        &:before {
+            content:          '';
+            position:         absolute;
+            bottom:           0;
+            height:           2px;
+            width:            100%;
+            background-color: transparent;
+            transition:       background-color 0.2s ease-in-out;
+        }
+        
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+        
+        &:hover:before {
+            background-color: @muted_blue;
+        }
+        
+        @media screen and (max-width: (@big_width)) {
+            color: @gray_2;
+            
+            &:hover:before {
+                background-color: @dark_blue;
+            }
+        }
+        
+        &.active:before {
+            background-color: @muted_blue;
+            
+            @media screen and (max-width: (@big_width)) {
+                background-color: @dark_blue;
+            }
+        }
+    }
+    
+    &__icon-close {
+        
+        fill:     @gray_5;
+        position: absolute;
+        right:    20px;
+        top:      40px;
+        cursor:   pointer;
+        
+        path {
+            pointer-events: none;
+        }
+        
+        @media screen and (min-width: (@big_width)) {
+            display: none;
+        }
+        
+    }
+}
+
+// header end
+

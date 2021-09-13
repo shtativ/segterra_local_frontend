@@ -1,0 +1,658 @@
+<section class="blog-section">
+    <div class="post-listing-wrapper">
+        <div class="post-listing">
+            <article class="post__item">
+                <a href="#">
+                    <img src="assets/img/post_1.png" alt="">
+                </a>
+                <a href="#">
+                    <h1 class="post__header"> This is an example of a long title formatted in sentence case, over two lines</h1>
+                </a>
+                <h6>
+                    <span>By Brayden Woods, </span>
+                    <span>
+                                <span>Dec</span>
+                                <span>29, </span>
+                                <span>2018</span>
+                            </span>
+                </h6>
+                <p>
+                    Did you know the most common risk factors for health, disease, and mortality worldwide actually has nothing to do with
+                    lifestyle or genetics? It has to do with chronological age. (So, don't blame the family tree just yet) Chronological
+                    aging, the number on your birth certificate, is inevitable. Did you know the most common risk factors for health,
+                    disease, and mortality worldwide actually has nothing to do with lifestyle or genetics? It has to do with chronological
+                    age. (So, don't blame the family tree just yet) Chronological aging, the number on your birth certificate, is
+                    inevitable. </p>
+                <a class="read-more" href="#">Read more</a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="assets/img/post_1.png" alt="">
+                </a>
+                <a href="#">
+                    <h1>This is an example of a short title</h1>
+                </a>
+                <h6>
+                    <span>By Brayden Woods, </span>
+                    <span>
+                                <span>Dec</span>
+                                <span>29, </span>
+                                <span>2018</span>
+                            </span>
+                </h6>
+                <p>
+                    The 2018 Reebok CrossFit Games are fast-approaching and we couldn’t be more excited! After all, for those of you who
+                    don’t know, the CrossFit Games, known simply as "The Games" is the Super Bowl of the CrossFit competition season with
+                    the first place man and woman being crowned "The Fittest on Earth." </p>
+                <a class="read-more" href="#">Read more</a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="assets/img/post_2.png" alt="">
+                </a>
+                <a href="#">
+                    <h1>Sentence case is easier to read</h1>
+                </a>
+                <h6>
+                    <span>By Brayden Woods, </span>
+                    <span>
+                                <span>Dec</span>
+                                <span>29, </span>
+                                <span>2018</span>
+                            </span>
+                </h6>
+                <p>
+                    Did you know the most common risk factors for health, disease, and mortality worldwide actually has nothing to do with
+                    lifestyle or genetics? It has to do with chronological age. (So, don't blame the family tree just yet) Chronological
+                    aging, the number on your birth certificate, is inevitable. </p>
+                <a class="read-more" href="#">Read more</a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="assets/img/post_3.png" alt="">
+                </a>
+                
+                <a href="#">
+                    <h1>This is an example of a long title formatted in sentence case, over two lines</h1>
+                </a>
+                <h6>
+                    <span>By Brayden Woods, </span>
+                    <span>
+                                <span>Dec</span>
+                                <span>29, </span>
+                                <span>2018</span>
+                            </span>
+                </h6>
+                <p>
+                    Did you know the most common risk factors for health, disease, and mortality worldwide actually has nothing to do with
+                    lifestyle or genetics? It has to do with chronological age. (So, don't blame the family tree just yet) Chronological
+                    aging, the number on your birth certificate, is inevitable. </p>
+                <a class="read-more" href="#">Read more</a>
+            </article>
+        </div>
+        <div class="btn-wrap btn-block--centered">
+            <button type="button" class="btn-primary btn-posts btn-posts--next">
+                <span>Newer posts</span>
+            </button>
+            <button type="button" class="btn-primary btn-posts btn-posts--prev">
+                <span>Older posts</span>
+            </button>
+        </div>
+        <a href="#" class="link-secondary">View full list of blog posts</a>
+    </div>
+    <div class="right-panel"></div>
+    <div class="modal modal--regular show" id="modal">
+        <div class="modal__wrapper">
+            <div class="modal__close"></div>
+            <div class="modal__info">
+                <div class="modal__text">
+                    <h2 class="heading-20 modal__title">Like what you see?</h2>
+                    <p class="heading-20 modal__title hide-tablet--horizontal">Don’t miss out!</p>
+                    <a href="#" onclick="return false" class="btn-primary-glass">Subscribe to the blog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--hubspot
+<div class="blog-section">
+   <div class="blog-post-wrapper cell-wrapper">
+       <div class="blog-section">
+           <div class="blog-post-wrapper cell-wrapper">
+               <div class="section post-header">
+                   <h1>{{ content.name }}</h1>
+                   <div id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author" >
+                       <span class="hs-author-label">by</span>
+                       {% if content.blog_post_author %}
+                       <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{{ content.blog_post_author.display_name }}</a> on {{ content.publish_date_localized }}
+                       {% if content.blog_post_author.avatar %} <div class="hs-author-avatar"> <img src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.display_name }}"> </div> {% endif %}
+                       {% endif %}
+                   </div>
+               </div>
+               <div class="section post-body">
+                   {{ content.post_body }}
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+Listing template
+<div class="blog-section">
+   <div class="blog-listing-wrapper cell-wrapper">
+       <div class="blog-section">
+           <div class="blog-listing-wrapper cell-wrapper">
+               {# simple_list_page indicates the "blog/all" page, which is a list of links to every blog post #}
+               <div class="post-listing{% if simple_list_page %}-simple{% endif %}">
+                   {% if blog_author %}
+                   <div class="hs-author-profile">
+                       <h2 class="hs-author-name">{{ blog_author.display_name }}</h2>
+                       {% if blog_author.avatar %} <div class="hs-author-avatar"> <img src="{{ blog_author.avatar }}" alt="{{ blog_author.display_name }}"> </div> {% endif %}
+                       <div class="hs-author-bio">{{ blog_author.bio }}</div>
+                   </div>
+                   <h3 class="hs-author-listing-header">Recent Posts</h3>
+                   {% endif %}
+                   {% for content in contents %}
+                   <article class="post__item">
+                       {% if not simple_list_page %}
+                       <div class="post-body clearfix">
+                           //post summary
+                           {% if content.post_list_summary_featured_image %}
+                           <div class="hs-featured-image-wrapper">
+                               <a href="{{content.absolute_url}}" title="" class="hs-featured-image-link">
+                                   <img src="{{ content.post_list_summary_featured_image }}" class="hs-featured-image" alt="{{ content.featured_image_alt_text | escape }}">
+                               </a>
+                           </div>
+                           {% endif %}
+                       </div>
+                       <div class="post-header">
+                           <h1><a class="post__header-link" href="{{content.absolute_url}}">{{ content.name }}</a></h1>
+                           <div id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
+                               by
+                               {%if content.blog_post_author %}
+                               <a class="author-link" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}">{{ content.blog_post_author.display_name }}</a> {{ content.publish_date_localized }}
+                               {% endif %}
+                           </div>
+                       </div>
+                       {{ content.post_list_content|safe }}
+                       {% if content_group.show_summary_in_listing %}
+                       <a class="read-more" href="{{ content.absolute_url }}">Read more</a>
+                       {% endif %}
+                       {% else %}
+                       <h2 class="post-listing-simple"><a href="{{content.absolute_url}}">{{ content.name }}</a></h2>
+                       {% endif %}
+                   </article>
+                   {% endfor %}
+               </div>
+               {% if not simple_list_page %}
+               <div class="btn-wrap btn-block--centered">
+                   {% if last_page_num %}
+                   <a class="btn-primary btn-posts btn-posts--next" href="{{ blog_page_link(last_page_num) }}"><span>Newer posts</span></a>
+                   {% endif %}
+                   {% if next_page_num %}
+                   <a class="btn-primary btn-posts btn-posts--prev" href="{{ blog_page_link(next_page_num) }}"><span>Older posts</span></a>
+                   {% endif %}
+               </div>
+               <a class="link-secondary" href="{{ blog_all_posts_url(group.id) }}">View full list of blog posts</a>
+               {% endif %}
+           </div>
+       </div>
+   </div>
+</div>
+.blog-section {
+  margin: 100px 0 200px 0;
+}
+.post-listing  .hs-blog-social-share {
+  display: none;
+}
+@media (max-width: 858px) {
+  .blog-section {
+    margin: 40px 0 0 0;
+  }
+}
+.blog-section .link-secondary {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+}
+@media (max-width: 858px) {
+  .blog-section .link-secondary {
+    margin-top: 15px;
+  }
+}
+.blog-section .btn-block--centered {
+  margin: 0 auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-section article {
+  margin-bottom: 63px;
+}
+@media (max-width: 858px) {
+  .blog-section article {
+    margin-bottom: 37px;
+  }
+}
+.blog-section article h1 {
+  color: #232d37;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  max-width: 667px;
+  width: 100%;
+  line-height: 40px;
+  margin: 0 0 10px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+@media (max-width: 858px) {
+  .blog-section article h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.blog-section article h6 {
+  color: #87919b;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.blog-section article h6 a {
+  color: #87919b;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-decoration: none;
+}
+.blog-section article img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+.blog-section .post-content {
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+  margin: 20px 0 0;
+  font-size: 16px;
+  color: #232d37;
+}
+.blog-section article p span {
+  font-size: 16px;
+}
+.blog-section article p a {
+  font-size: 16px;
+  text-decoration: none;
+}
+@media (max-width: 858px) {
+  .blog-section .post-content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 858px) {
+  .blog-section .post-content a {
+    font-size: 14px;
+  }
+}
+.blog-section article p a:hover,
+.blog-section article p a:focus,
+.blog-section article p a:active {
+  color: #0096e1;
+  text-decoration: underline;
+}
+@media (max-width: 858px) {
+  .blog-section article p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.post-listing-wrapper {
+  max-width: 820px;
+  width: 100%;
+}
+@media (max-width: 858px) {
+  .post-listing-wrapper {
+    max-width: 100%;
+    margin-top: 16px;
+    margin-bottom: 50px;
+  }
+}
+.post-listing {
+  margin-bottom: 93px;
+}
+@media (max-width: 858px) {
+  .post-listing {
+    margin-bottom: 45px;
+  }
+}
+.read-more {
+  margin: 12px 0;
+  font-size: 16px;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #00aaff;
+  text-decoration: none;
+}
+.read-more:hover,
+.read-more:focus,
+.read-more:active {
+  color: #0096e1;
+  text-decoration: underline;
+}
+@media (max-width: 858px) {
+  .read-more {
+    font-size: 14px;
+  }
+}
+.btn-posts {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 121px;
+  margin-top: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+@media (max-width: 850px) {
+  .btn-posts {
+    margin-top: 10px;
+  }
+}
+.btn-posts:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: url(https://cdn2.hubspot.net/hubfs/419889/images2019/arrow-left.svg);
+  width: 8px;
+  height: 12px;
+  top: 12px;
+}
+.btn-posts--next {
+  padding-left: 39px;
+}
+@media (max-width: 450px) {
+  .btn-posts--next {
+    padding-left: 24px;
+  }
+}
+.btn-posts--next:before {
+  left: 20px;
+}
+@media (max-width: 450px) {
+  .btn-posts--next:before {
+    left: 10px;
+  }
+}
+.btn-posts--prev {
+  padding-right: 39px;
+}
+@media (max-width: 450px) {
+  .btn-posts--prev {
+    padding-right: 24px;
+  }
+}
+.btn-posts--prev:before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 20px;
+}
+@media (max-width: 450px) {
+  .btn-posts--prev:before {
+    right: 10px;
+  }
+}
+.post-search {
+  display: none;
+}
+@media (max-width: 858px) {
+  .post-search {
+    display: block;
+  }
+}
+.post-search .form-control {
+  width: 100%;
+  max-width: 100%;
+}
+.post__header-link {
+  color: #232d37;
+  text-decoration: none;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.post__header-link:hover,
+.post__header-link:focus,
+.post__header-link:active {
+  color: #232d37 !important;
+}
+.post-header #hubspot-author_data {
+  text-decoration: none;
+  color: #87919b;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+.blog-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+a.author-link {
+  color: #87919b;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.hs-featured-image-wrapper {
+    margin-bottom: 23px;
+}
+
+.post__item-link {
+  border: 0;
+  overflow: hidden;
+  display: block;
+  border-radius: 6px;
+}
+
+/* List of posts */
+.post-listing--simple {
+  margin-top: -130px;
+}
+@media screen and (max-width: 858px) {
+  .post-listing--simple {
+    margin-top: -45px;
+  }
+}
+.post-listing--simple .post-list-item {
+  margin-bottom: 12px;
+  display: block;
+}
+.post-listing--simple .post-list-item a {
+  padding-left: 20px;
+  position: relative;
+  color: #232d37;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  display: inline-block;
+}
+.post-listing--simple .post-list-item .info-content__icon {
+  left: 0;
+  top: 8px;
+}
+
+
+#leadinModal-664747 .leadinModal-content {
+  bottom: 30px;
+  border-radius: 6px;
+  box-shadow: none;
+  right: 50%;
+  transform: translateX(585px);
+  transition: all 0s linear;
+  animation: none;
+}
+
+@media (max-width: 1220px) {
+  #leadinModal-664747 .leadinModal-content {
+    right: 0;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 858px) {
+  #leadinModal-664747 .leadinModal-content {
+    bottom:0;
+    border-radius:0;
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 858px) {
+#leadinModal-664747 .advance-wrapper {
+  margin: 0 auto!important;
+  text-align: center;
+  }
+}
+
+@media (max-width: 858px) {
+#leadinModal-664747 h4 {
+  margin: 0 auto!important;
+  text-align: center;
+  }
+}
+
+#leadinModal-664747 .leadin-preview-wrapper {
+   padding: 35px 30px 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+@media (max-width: 858px) {
+#leadinModal-664747 .leadin-preview-wrapper {
+  padding: 30px 0 20px;
+  }
+}
+
+#leadinModal-664747 h4 {
+  margin:0;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+#leadinModal-664747 .leadin-button {
+  border: 1px solid #fff;
+  color: #fff!important;
+  white-space: nowrap;
+  margin-top: 17px;
+  font-weight: 400;
+  background-color: transparent!important;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding: 0 20px;
+  margin: 0 10px;
+  line-height: 36px;
+  display: inline-block;
+  width: auto;
+  letter-spacing: .23px;
+  line-height: 36px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  height: 36px;
+  margin-top: 10px;
+  transition: all .2s ease-out;
+}
+
+#leadinModal-664747 .leadin-button:hover {
+  color: #0af!important;
+  background-color: #fff!important;
+}
+
+#leadinModal-664747 .leadinModal-description-664747 {
+  margin:0;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-top: -10px;
+}
+
+@media (max-width: 858px) {
+  #leadinModal-664747 .leadinModal-description-664747 {
+   display: none;
+  }
+}
+
+#leadinModal-664747 .leadinModal-content{
+   width: 276px;
+}
+
+#leadinModal-664747 .leadinModal-close {
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+  transition: all .2s ease-out;
+}
+
+#leadinModal-664747 .leadinModal-close:before {
+  padding-top: 8px;
+  padding-right: 13px;
+  transition: all .2s ease-out;
+}
+
+#leadinModal-664747 .leadinModal-close:hover {
+   background-color: #f5f5f5;
+}
+
+#leadinModal-664747 .leadinModal-close:hover:before {
+   color: #0af!important;
+}
+
+#leadin-content-form-wrapper {
+  padding: 10px;
+}
+
+#leadinModal-664747 .leadin-button-wrapper .leadin-submit {
+  color: #ffffff;
+  border-style: hidden;
+  border-color: #00aaff;
+  background-color: #00aaff!important;
+}
+
+#leadinModal-664747 .leadin-button-wrapper .leadin-submit:hover,
+#leadinModal-664747 .leadin-button-wrapper .leadin-submit:focus {
+  color: #ffffff;
+  border-color: #46c3ff;
+  background-color: #46c3ff!important;
+  text-decoration: none;
+}
+ //-->

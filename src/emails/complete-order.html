@@ -1,0 +1,635 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        
+        table {
+            border-collapse:  collapse;
+            border-spacing:   0;
+            min-width:        290px;
+            width:            100%;
+            margin:           0 auto;
+            padding:          0;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        
+        td {
+            margin:  0;
+            padding: 0;
+        }
+        
+        p {
+            margin:  0;
+            padding: 0;
+        }
+        
+        img {
+            outline:                none;
+            -ms-interpolation-mode: bicubic;
+            display:                block;
+            margin:                 0 auto;
+            padding:                0;
+        }
+        
+        .table {
+            margin-top: 20px;
+            max-width:  600px;
+        }
+        
+        .text {
+            mso-line-height-rule: exactly;
+            font-style:           normal;
+            letter-spacing:       normal;
+            color:                #000000;
+        }
+        
+        .link {
+            color:           #12a0d2 !important;
+            text-decoration: none;
+            font-family:     "Open Sans", Arial, sans-serif;
+        }
+        
+        .table-wrap,
+        .table-footer {
+            background-color: #eef6f8;
+        }
+        
+        .table-header {
+            background-color: #12a0d2;
+        }
+        
+        .header-image {
+            padding-top: 16px;
+        }
+        
+        .header-text {
+            font-family: Arvo, Arial, sans-serif;
+            font-size:   17px;
+            color:       #ffffff;
+            line-height: 17px;
+        }
+        
+        .table-content-wrap {
+            background-color: #ffffff;
+            padding-top:      55px;
+            padding-bottom:   75px;
+        }
+        
+        .table-content-title {
+            font-family:    Arvo, Arial, sans-serif;
+            font-size:      28px;
+            line-height:    34px;
+            padding-bottom: 7px;
+        }
+        
+        .table-content-subtitle {
+            font-family:    "Open Sans", Arial, sans-serif;
+            font-size:      22px;
+            line-height:    30px;
+            padding-bottom: 25px;
+        }
+        
+        .table-content-text {
+            font-family:    "Open Sans", Arial, sans-serif;
+            font-size:      18px;
+            line-height:    24px;
+            padding-bottom: 45px;
+        }
+        
+        .table-button-pb {
+            padding-bottom: 70px;
+        }
+        
+        .table-content-button {
+            font-family:        "Open Sans", Arial, sans-serif;
+            display:            block;
+            width:              230px;
+            height:             60px;
+            background-color:   #12a0d2;
+            text-decoration:    none;
+            color:              #ffffff;
+            line-height:        60px;
+            font-weight:        700;
+            font-size:          14px;
+            text-transform:     uppercase;
+            -webkit-transition: 0.3s;
+            -o-transition:      0.3s;
+            transition:         0.3s;
+        }
+        
+        .table-content-button-pt {
+            margin-top: 12px;
+        }
+        
+        .table-content-button:hover {
+            background-color: #1cb8ef !important;
+        }
+        
+        .table-content-link {
+            display:     block;
+            font-size:   14px;
+            line-height: 26px;
+        }
+        
+        .table-footer-wrap {
+            padding-top:    60px;
+            padding-bottom: 100px;
+        }
+        
+        .table-footer-wrap .table-content-title {
+            padding-bottom: 7px;
+        }
+        
+        .footer-text {
+            font-family:    "Open Sans", Arial, sans-serif;
+            color:          #818181;
+            font-size:      12px;
+            line-height:    21px;
+            padding-bottom: 40px;
+        }
+        
+        .footer-image {
+            width:          32px;
+            height:         32px;
+            padding-bottom: 22px;
+        }
+        
+        .table-padding-both {
+            padding-left:  10px;
+            padding-right: 10px;
+        }
+        
+        /**/
+        
+        .table-content-text-460 {
+            padding-left:   70px;
+            padding-right:  70px;
+            padding-bottom: 35px;
+        }
+        
+        .separator {
+            background-color: #babcbe;
+            height:           1px;
+            width:            100%;
+        }
+        
+        .table-order-wrap {
+            padding-left:  32px;
+            padding-right: 32px;
+            padding-top:   35px;
+        }
+        
+        .table-title-shipping {
+            padding-bottom: 5px;
+        }
+        
+        .table-title-order {
+            padding-bottom: 14px;
+        }
+        
+        .table-content-address {
+            padding-top: 9px;
+        }
+        
+        .table-content-row {
+            padding-bottom: 14px;
+            padding-top:    14px;
+            border-bottom:  1px solid #babcbe;
+        }
+        
+        .table-content-row--first {
+            padding-top: 7px;
+        }
+        
+        .table-content-row span {
+            float:        right;
+            padding-left: 10px;
+        }
+        
+        .table-content-row p {
+            font-size: 14px;
+        }
+        
+        .table-content--last {
+            border-bottom:  none;
+            font-weight:    700;
+            font-size:      22px;
+            padding-bottom: 20px;
+        }
+        
+        .table-content--last p {
+            font-weight: normal;
+            padding-top: 8px;
+            line-height: 24px;
+        }
+        
+        .drugs-row {
+            border-bottom:  1px solid #babcbe;
+            padding-bottom: 14px;
+            padding-top:    14px;
+        }
+        
+        .drugs-row--last {
+            border-bottom: none;
+        }
+        
+        .drugs-image {
+            width:         66px;
+            height:        66px;
+            float:         left;
+            padding-right: 18px;
+        }
+        
+        .drugs-name {
+            font-family: "Open Sans", Arial, sans-serif;
+            font-weight: 700;
+            font-size:   18px;
+            line-height: 24px;
+            padding-top: 18px;
+            float:       left;
+            color:       #000000;
+        }
+        
+        .bonus-img-wrap {
+            padding-top:    27px;
+            padding-bottom: 60px;
+        }
+        
+        .bonus-img {
+            max-width: 100%;
+            width:     auto;
+            height:    auto;
+        }
+        
+        .bonus-img--mobile {
+            max-width: 100%;
+            width:     auto;
+            height:    auto;
+            display:   none;
+        }
+        
+        @media screen and (max-width: 420px) {
+            .table {
+                margin-top: 0 !important;
+            }
+            
+            .table-header {
+                height: 90px !important;
+            }
+            
+            .header-text {
+                display: none !important;
+            }
+            
+            .header-image {
+                padding-top: 15px !important;
+                height:      60px !important;
+            }
+            
+            .header-image img {
+                height: 60px !important;
+            }
+            
+            .table-content-wrap {
+                padding-top: 50px !important;
+            }
+            
+            .table-order-wrap {
+                padding-left:  10px !important;
+                padding-right: 10px !important;
+            }
+            
+            .table-content-text-460 {
+                padding-left:   10px !important;
+                padding-right:  10px !important;
+                padding-bottom: 40px !important;
+            }
+            
+            .separator {
+                margin-left:   10px !important;
+                padding-right: 10px !important;
+            }
+            
+            .table-mobile-center {
+                text-align: center !important;
+            }
+            
+            .bonus-img {
+                display: none !important;
+            }
+            
+            .bonus-img--mobile {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0 auto;">
+<table align="center"
+       border="0"
+       bgcolor="#eef6f8"
+       cellpadding="0"
+       cellspacing="0"
+       width="100%"
+       class="table-wrap"
+       style="border-collapse: collapse;border-spacing: 0;min-width: 290px;width: 100%;margin: 0 auto;padding: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #eef6f8;">
+    <tbody>
+    <tr>
+        <td style="margin: 0;padding: 0;">
+            <table align="center"
+                   border="0"
+                   cellpadding="0"
+                   cellspacing="0"
+                   width="600px"
+                   class="table"
+                   style="border-collapse: collapse;border-spacing: 0;min-width: 290px;width: 100%;margin: 0 auto;padding: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;margin-top: 20px;max-width: 600px;">
+                <tbody>
+                <tr>
+                    <td align="center" class="table-header-wrap" style="margin: 0;padding: 0;">
+                        <table align="center"
+                               bgcolor="#eef6f8"
+                               border="0"
+                               cellpadding="0"
+                               cellspacing="0"
+                               width="100%"
+                               height="110px"
+                               class="table-header"
+                               style="border-collapse: collapse;border-spacing: 0;min-width: 290px;width: 100%;margin: 0 auto;padding: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #12a0d2;">
+                            <tbody>
+                            <tr>
+                                <td align="center" height="50" class="header-image" style="margin: 0;padding: 0;padding-top: 16px;">
+                                    <img height="50"
+                                         src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/email-logo.png"
+                                         alt=""
+                                         style="outline: none;-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    class="text header-text"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #ffffff;font-family: Arvo, Arial, sans-serif;font-size: 17px;line-height: 17px;">
+                                    Precisely Personalized Supplements
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-content-wrap"
+                        style="margin: 0;padding: 0;background-color: #ffffff;padding-top: 55px;padding-bottom: 75px;">
+                        <table align="center"
+                               bgcolor="#ffffff"
+                               border="0"
+                               cellpadding="0"
+                               cellspacing="0"
+                               width="100%"
+                               class="table-content"
+                               style="border-collapse: collapse;border-spacing: 0;min-width: 290px;width: 100%;margin: 0 auto;padding: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                            <tbody>
+                            <tr>
+                                <td align="center"
+                                    class="text table-content-title table-padding-both"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: Arvo, Arial, sans-serif;font-size: 28px;line-height: 34px;padding-bottom: 7px;padding-left: 10px;padding-right: 10px;">
+                                    Your order is complete
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    class="text table-content-subtitle"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 22px;line-height: 30px;padding-bottom: 25px;">
+                                    Order #: 12345678ABC
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    class="text table-content-text table-content-text-460"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 18px;line-height: 24px;padding-bottom: 35px;padding-left: 70px;padding-right: 70px;">
+                                    First-time orders typically ship within 2-3 days from the date they're placed. You will receive a
+                                    shipping confirmation and tracking number when your order ships. Thank you!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="separator" style="margin: 0;padding: 0;background-color: #babcbe;height: 1px;width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="table-order-wrap"
+                                    style="margin: 0;padding: 0;padding-left: 32px;padding-right: 32px;padding-top: 35px;">
+                                    <table align="center"
+                                           bgcolor="#ffffff"
+                                           border="0"
+                                           cellpadding="0"
+                                           cellspacing="0"
+                                           width="100%"
+                                           class="table-order"
+                                           style="border-collapse: collapse;border-spacing: 0;min-width: 290px;width: 100%;margin: 0 auto;padding: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                        <tbody>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-title table-mobile-center table-title-shipping"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: Arvo, Arial, sans-serif;font-size: 28px;line-height: 34px;padding-bottom: 5px;">
+                                                Shipping To
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-text table-content-address table-mobile-center"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 18px;line-height: 24px;padding-bottom: 45px;padding-top: 9px;">
+                                                123 Main Street, Apt. 123 <br>Boston, MA 01234 US
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-title table-mobile-center table-title-order"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: Arvo, Arial, sans-serif;font-size: 28px;line-height: 34px;padding-bottom: 14px;">
+                                                Order summary
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-text table-content-row table-content-row--first"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 18px;line-height: 24px;padding-bottom: 14px;padding-top: 7px;border-bottom: 1px solid #babcbe;">
+                                                My plan (monthly)
+                                                <span style="float: right;padding-left: 10px;">$49.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-text table-content-row"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 18px;line-height: 24px;padding-bottom: 14px;padding-top: 14px;border-bottom: 1px solid #babcbe;">
+                                                <span style="float: right;padding-left: 10px;">FREE</span>
+                                                Shipping <br>
+                                            
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-text table-content-row"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 18px;line-height: 24px;padding-bottom: 14px;padding-top: 14px;border-bottom: 1px solid #babcbe;">
+                                                <span style="float: right;padding-left: 10px;">$0.00</span>
+                                                Taxes
+                                                <p style="margin: 0;padding: 0;font-size: 14px;">Calculated after shipping</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"
+                                                class="text table-content-text table-content-row table-content--last"
+                                                style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 22px;line-height: 24px;padding-bottom: 20px;padding-top: 14px;border-bottom: none;font-weight: 700;">
+                                                <span style="float: right;padding-left: 10px;">$49</span>
+                                                Order total:
+                                                <p style="margin: 0;padding: 0;font-size: 14px;font-weight: normal;padding-top: 8px;line-height: 24px;">
+                                                    Renews every 30 days. Cancel anytime.
+                                                    <a href="#"
+                                                       class="link table-content-link"
+                                                       style="text-decoration: none;font-family: &quot;Open Sans&quot;, Arial, sans-serif;display: block;font-size: 14px;line-height: 26px;color: #12a0d2!important;">
+                                                        More information
+                                                    </a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drugs-row"
+                                                style="margin: 0;padding: 0;border-bottom: 1px solid #babcbe;padding-bottom: 14px;padding-top: 14px;">
+                                                <img class="drugs-image"
+                                                     src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/bcomplex.jpg"
+                                                     alt=""
+                                                     style="-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;width: 66px;height: 66px;float: left;padding-right: 18px;">
+                                                <b class="drugs-name"
+                                                   style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-weight: 700;font-size: 18px;line-height: 24px;padding-top: 18px;float: left;color: #000000;">B
+                                                    Complex</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drugs-row"
+                                                align="left"
+                                                style="margin: 0;padding: 0;border-bottom: 1px solid #babcbe;padding-bottom: 14px;padding-top: 14px;">
+                                                <img class="drugs-image"
+                                                     src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/Glutathione.jpg"
+                                                     alt=""
+                                                     style="-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;width: 66px;height: 66px;float: left;padding-right: 18px;">
+                                                <b class="drugs-name"
+                                                   style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-weight: 700;font-size: 18px;line-height: 24px;padding-top: 18px;float: left;color: #000000;">Glutathione</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="drugs-row drugs-row--last"
+                                                align="left"
+                                                style="margin: 0;padding: 0;border-bottom: none;padding-bottom: 14px;padding-top: 14px;">
+                                                <img class="drugs-image"
+                                                     src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/omega3.jpg"
+                                                     alt=""
+                                                     style="-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;width: 66px;height: 66px;float: left;padding-right: 18px;">
+                                                <b class="drugs-name"
+                                                   style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-weight: 700;font-size: 18px;line-height: 24px;padding-top: 18px;float: left;color: #000000;">Omega
+                                                    3</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bonus-img-wrap" style="margin: 0;padding: 0;padding-top: 27px;padding-bottom: 60px;">
+                                                <img class="bonus-img"
+                                                     src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/bonus.jpg"
+                                                     alt=""
+                                                     style="-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;max-width: 100%;width: auto;height: auto;">
+                                                <img class="bonus-img--mobile"
+                                                     src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/bonus-mobile.jpg"
+                                                     alt=""
+                                                     style="-ms-interpolation-mode: bicubic;display: none;margin: 0 auto;padding: 0;max-width: 100%;width: auto;height: auto;">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="table-button-pb" style="margin: 0;padding: 0;padding-bottom: 70px;">
+                                    <a target="_blank"
+                                       href=""
+                                       class="table-content-button"
+                                       style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;display: block;width: 230px;height: 60px;background-color: #12a0d2;text-decoration: none;color: #ffffff;line-height: 60px;font-weight: 700;font-size: 14px;text-transform: uppercase;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;">
+                                        Log in to my account
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    class="text table-content-title"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: Arvo, Arial, sans-serif;font-size: 28px;line-height: 34px;padding-bottom: 7px;">
+                                    Have any questions?
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="margin: 0;padding: 0;">
+                                    <a target="_blank"
+                                       href="mailto:help@hellorigr.com"
+                                       class="link table-content-link"
+                                       style="text-decoration: none;font-family: &quot;Open Sans&quot;, Arial, sans-serif;display: block;font-size: 14px;line-height: 26px;color: #12a0d2!important;">
+                                        help@hellorigr.com
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-footer-wrap" style="margin: 0;padding: 0;padding-top: 60px;padding-bottom: 100px;">
+                        <table align="center"
+                               bgcolor="#eef6f8"
+                               border="0"
+                               cellpadding="0"
+                               cellspacing="0"
+                               width="100%"
+                               class="table-footer"
+                               style="border-collapse: collapse;border-spacing: 0;min-width: 290px;width: 100%;margin: 0 auto;padding: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #eef6f8;">
+                            <tbody>
+                            <tr>
+                                <td align="center"
+                                    class="text table-content-title"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #000000;font-family: Arvo, Arial, sans-serif;font-size: 28px;line-height: 34px;padding-bottom: 7px;">
+                                    Join us on Instagram
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="margin: 0;padding: 0;">
+                                    <a href="https://www.instagram.com/hellorigr/" target="_blank">
+                                        <img src="http://arabesk-dance.by/wp-content/themes/arabesk/img/rigr/email-inst.png"
+                                             alt=""
+                                             class="footer-image"
+                                             style="-ms-interpolation-mode: bicubic;display: block;margin: 0 auto;padding: 0;width: 32px;height: 32px;padding-bottom: 22px;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    class="text footer-text"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #818181;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 12px;line-height: 21px;padding-bottom: 40px;">
+                                    Rigr Centrum™ <br> 1 Giralda Farms, Madison, NJ 07940
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    class="text footer-text"
+                                    style="margin: 0;padding: 0;mso-line-height-rule: exactly;font-style: normal;letter-spacing: normal;color: #818181;font-family: &quot;Open Sans&quot;, Arial, sans-serif;font-size: 12px;line-height: 21px;padding-bottom: 40px;">
+                                    ©2019 Pfizer, Inc. All rights reserved.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

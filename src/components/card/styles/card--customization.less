@@ -1,0 +1,74 @@
+@import "../../../styles/utils/variables";
+
+/*          Customizing plan cards  */
+
+.card--customization {
+    
+    .card-label--customization {
+        width:  100%;
+        height: 100%;
+        
+        .icon-checked {
+            display: none;
+        }
+    }
+    
+    .card-label__wrapper {
+        width:         100%;
+        height:        100%;
+        border-radius: 6px;
+    }
+    
+    .card-checkbox--customization {
+        position:         absolute;
+        cursor:           pointer;
+        top:              10px;
+        left:             auto;
+        right:            10px;
+        width:            36px;
+        height:           36px;
+        border:           2px solid #fff;
+        border-radius:    50%;
+        box-shadow:       0 4px 15px 1px rgba(0, 0, 0, 0.35);
+        background-color: rgba(255, 255, 255, 0.5);
+        display:          flex;
+        justify-content:  center;
+        align-items:      center;
+        
+        .icon-checked {
+            display: none;
+        }
+    }
+    
+    .card-input--customization:checked + .card-label__wrapper {
+        
+        box-shadow: 0 0 0 1px @primary;
+    
+        .card__img--1 {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                              url('../assets/img/card/action1.jpg');
+        }
+    
+        .card__img--2 {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                              url('../assets/img/card/action2.jpg');
+        }
+    
+        .card__img--3 {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                              url('../assets/img/card/action3.jpg');
+        }
+    }
+    
+    .card-input--customization:checked ~ .card-checkbox--customization {
+        
+        background:   @primary;
+        border-color: @primary;
+        box-shadow:   none;
+        
+        .icon-checked {
+            fill:    #fff;
+            display: block;
+        }
+    }
+}

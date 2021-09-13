@@ -1,0 +1,145 @@
+@import "../../../styles/utils/variables";
+
+/*          Dashboard plan card list   */
+
+.card-list--dashboard {
+    padding-top: 35px;
+}
+
+.card__swiper-button {
+    display:          flex;
+    justify-content:  center;
+    align-items:      center;
+    position:         absolute;
+    width:            62px;
+    top:              35px;
+    bottom:           30px;
+    background-color: rgba(35, 45, 55, 0.6);
+    z-index:          15;
+    
+    @media only screen and (max-width: (@max_width)) {
+        width: 40px;
+    }
+    
+    @media only screen and (max-width: (@big_tablet)) {
+        display: none;
+    }
+    
+    .icon-swiper--prev, .icon-swiper--next {
+        color:     #fff;
+        font-size: 27px;
+    }
+    
+    .icon-swiper--next {
+        transform: scale(-1, 1);
+    }
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+.swiper-button--prev {
+    left:          0;
+    border-radius: 0 6px 6px 0;
+}
+
+.swiper-button--next {
+    right:         0;
+    border-radius: 6px 0 0 6px;
+}
+
+/*          Dashboard card          */
+
+.card--checkin {
+    
+    &.swiper-slide .card__content {
+        height: 400px;
+        
+        @media only screen and (max-width: (@big_tablet)) {
+            height: 380px;
+        }
+    }
+    
+    .card-days {
+        display:         flex;
+        justify-content: space-between;
+        margin-top:      11px;
+        
+        &__item {
+            color:     @gray5;
+            font-size: 11px;
+            
+            .btn-card--day {
+                position:      relative;
+                background:    none;
+                padding:       0;
+                width:         24px;
+                height:        24px;
+                text-align:    center;
+                border:        1px solid @gray5;
+                border-radius: 50%;
+                outline:       none;
+                
+                &--future {
+                    opacity:        0.4;
+                    cursor:         default;
+                    pointer-events: none;
+                }
+                
+                .card-days__item-date {
+                    position:  absolute;
+                    font-size: 9px;
+                    top:       25px;
+                    left:      50%;
+                    transform: translateX(-50%);
+                }
+                
+                .icon-checked {
+                    display: none;
+                }
+                
+            }
+            
+            .btn-card--day.selected {
+                border-color: @green;
+                
+                .card-days__item-date {
+                    display:     inline-block;
+                    font-weight: 700;
+                    color:       @gray2;
+                }
+            }
+            
+            .btn-card--day.checked {
+                background:      @green;
+                border:          1px solid @green;
+                border-radius:   50%;
+                display:         flex;
+                justify-content: center;
+                align-items:     center;
+                
+                .card-days__item-name, .card-days__item-date {
+                    display: none;
+                }
+                
+                .icon-checked {
+                    fill:    #fff;
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    /* "btn btn-primary-glass" from buttons component */
+    
+    /*.btn-card--checkin {
+        font-size:     14px;
+        font-weight:   600;
+        color:         @primary;
+        background:    none;
+        border:        1px solid @primary;
+        border-radius: 3px;
+        padding:       7px 20px;
+    }*/
+}

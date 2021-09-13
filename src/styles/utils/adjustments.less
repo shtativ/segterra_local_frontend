@@ -1,0 +1,161 @@
+@import "./variables";
+
+html {
+    font-size: 14px !important;
+    @media only screen  and(max-width: (1170px)) {
+        font-size: 13px !important;
+    }
+    @media only screen  and(max-width: (1020px)) {
+        font-size: 12px !important;
+    }
+    @media only screen  and(max-width: (980px)) {
+        font-size: 11px !important;
+    }
+}
+
+body, html {
+    margin:      0;
+    padding:     0;
+    font-family: "Open Sans", sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+ul {
+    margin:  0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+}
+
+//SVG icons
+
+.icon {
+    display:      inline-block;
+    width:        1em;
+    height:       1em;
+    stroke-width: 0;
+    stroke:       currentColor;
+    fill:         currentColor;
+}
+
+.no-scroll {
+    max-height: 100%;
+    overflow:   hidden;
+}
+
+// container
+
+.container {
+    position:  relative;
+    min-width: 310px;
+    max-width: @max_width;
+    margin:    0 auto;
+    
+    @media only screen and(max-width: (@desktop)) {
+        padding: 0 16px;
+    }
+}
+
+.container-content {
+    &:extend(.container);
+    display:         flex;
+    justify-content: space-between;
+    
+    @media only screen and(max-width: (@tablet_horizontal)) {
+        flex-direction:  column;
+        justify-content: flex-start;
+    }
+}
+
+.container-content {
+    &:extend(.container);
+    display:         flex;
+    justify-content: space-between;
+    
+    @media only screen and(max-width: (@tablet_horizontal)) {
+        flex-direction:  column;
+        justify-content: flex-start;
+    }
+}
+
+//*********************** specially for hubspot
+.footer-new ul {
+    list-style: none;
+    padding:    0;
+    margin:     0;
+}
+
+.footer-new li {
+    list-style: none;
+    padding:    0;
+    margin:     0;
+}
+
+.link-secondary-light + p {
+    margin: 0;
+}
+
+//*********************** specially for hubspot ENDED *****************
+
+// texts
+
+.text-20 {
+    color:          @gray1;
+    letter-spacing: 0.2px;
+    font-size:      20px;
+    line-height:    1.5;
+    font-weight:    400;
+    
+    @media only screen  and(max-width: (@tablet)) {
+        font-size: 16px;
+    }
+}
+
+.text-16 {
+    color:          @gray1;
+    letter-spacing: 0.2px;
+    font-size:      16px;
+    line-height:    1.5;
+    font-weight:    400;
+    
+    @media only screen and(max-width: (@tablet)) {
+        font-size: 14px;
+    }
+}
+
+.text-14 {
+    color:          @gray1;
+    letter-spacing: 0.2px;
+    font-size:      14px;
+    line-height:    1.5;
+    font-weight:    400;
+}
+
+.text-12 {
+    color:          @gray1;
+    letter-spacing: 0.2px;
+    font-size:      12px;
+    line-height:    1.5;
+    font-weight:    400;
+    
+    &--secondary {
+        color: @gray5;
+    }
+}
+
+.text--white {
+    color: #ffffff;
+}
+
+.text--semibold {
+    font-weight: 600;
+}

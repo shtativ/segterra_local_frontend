@@ -1,0 +1,33 @@
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h3 class="subtitle subtitle_contacts">Get more from InsideTracker</h3>
+        <form action="action.php" class="form form__contacts" method="post">
+            <label for="firstname">First name*</label>
+            <p>
+                <input id="firstname" name="firstname" placeholder="First name*" required type="text">
+            </p>
+            <label for="lastname">Last name*</label>
+            <p>
+                <input id="lastname" name="lastname" placeholder="Last name*" required type="text">
+            </p>
+            <label for="email">Email*</label>
+            <p>
+                <input id="email" name="email" placeholder="Email*" required type="text">
+            </p>
+            <label for="goal">What is your main goal?</label>
+            <p class="select-wrapper">
+                <svg class="icon icon-select">
+                    <use xlink:href="assets/sprite.svg#arrow-down" />
+                </svg>
+                <select class="goal" id="goal" name="goal">
+                    <option disabled selected value="">Please select</option>
+                    <option value="I love it">I love it</option>
+                    <option value="I really love it!">I really love it!</option>
+                </select>
+            </p>
+            <div class="text-align_center">
+                <button class="btn btn_primary" disabled id="submitForm" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>

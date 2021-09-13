@@ -1,0 +1,90 @@
+@import '../../styles/utils/variables';
+
+.radios-wrap {
+    //margin: 100px 0;
+}
+
+.radio {
+    margin-bottom: 20px;
+    
+    &__input {
+        position: absolute;
+        left:     -9999px;
+    }
+    
+    &__label {
+        margin-bottom:  10px;
+        position:       relative;
+        padding-top:    0;
+        line-height:    20px;
+        width:          auto;
+        letter-spacing: 0.2px;
+        color:          @gray1;
+        font-family:    "Open Sans", sans-serif;
+        font-size:      14px;
+        font-weight:    400;
+        
+        &:before {
+            display:          inline-block;
+            width:            18px;
+            height:           18px;
+            margin-right:     10px;
+            background-color: #ffffff;
+            border:           1px solid @gray6;
+            border-radius:    50%;
+            content:          "";
+            font-size:        35px;
+            font-weight:      600;
+            line-height:      30px;
+            text-align:       center;
+            color:            transparent;
+            vertical-align:   text-bottom;
+        }
+    }
+    
+    &__input:checked + &__label:after {
+        position:         absolute;
+        background-color: @primary;
+        top:              4px;
+        left:             3px;
+        display:          block;
+        height:           12px;
+        width:            12px;
+        border-radius:    50%;
+        content:          '';
+        z-index:          5;
+    }
+    
+    &__input:checked + &__label:before {
+        color:        @primary;
+        border-color: @primary;
+        background:   none;
+        font-size:    140px;
+        line-height:  30px;
+    }
+}
+
+.radio__input:checked:focus + .radio__label:before,
+.radio__input:not(:checked):focus + .radio__label:before {
+    border: 1px solid @primary;
+}
+
+.radio__input:disabled + .radio__label,
+.radio__input:checked:disabled + .radio__label,
+.radio__input:checked:disabled + .radio__label {
+    opacity: 0.3;
+}
+
+.radio__input.checked + .radio__label:after {
+    position:         absolute;
+    background-color: @primary;
+    top:              3px;
+    left:             4px;
+    display:          block;
+    height:           12px;
+    width:            12px;
+    border-radius:    50%;
+    content:          '';
+    z-index:          5;
+}
+

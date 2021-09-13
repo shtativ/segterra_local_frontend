@@ -1,0 +1,444 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <style>
+        body {
+            margin:      0 auto;
+            font-family: 'Open Sans', Arial, sans-serif;
+            color:       #232d37;
+        }
+        
+        table {
+            border-collapse:  collapse;
+            border-spacing:   0;
+            width:            100%;
+            margin:           0 auto;
+            padding:          0;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        
+        td, p {
+            margin:  0;
+            padding: 0;
+        }
+        
+        img {
+            outline:                none;
+            -ms-interpolation-mode: bicubic;
+            display:                block;
+            margin:                 0;
+            padding:                0;
+            max-width:              100%;
+            height:                 auto;
+        }
+        
+        a {
+            color:           #12a0d2;
+            text-decoration: none;
+            font-family:     "Open Sans", Arial, sans-serif;
+        }
+        
+        a:hover {
+            color: #1ebeda !important;
+        }
+        
+        a:focus {
+            color: #1ebeda !important;
+        }
+        
+        .wrapper {
+            background: #f5f5f5;
+        }
+        
+        .wrapper_td {
+            padding: 60px 0 200px;
+        }
+        
+        .email {
+            background: #ffffff;
+            width:      100%;
+            max-width:  600px;
+            min-width:  290px;
+        }
+        
+        .email-inner {
+            padding: 41px 60px 28px;
+        }
+        
+        .logo {
+            padding-bottom: 54px;
+        }
+        
+        .paragraph {
+            padding-bottom: 23px;
+            font-size:      14px;
+            line-height:    20px;
+            letter-spacing: 0.14px;
+            font-family:    "Open Sans", Arial, sans-serif;
+        }
+        
+        .paragraph-name {
+            font-family:    "Open Sans", Arial, sans-serif;
+            font-size:      20px;
+            font-weight:    600;
+            letter-spacing: 0.3px;
+            line-height:    30px;
+            padding-bottom: 40px;
+        }
+        
+        .paragraph-pb {
+            letter-spacing: 0.3px;
+            padding-bottom: 5px;
+        }
+        
+        .points {
+            padding-left: 46px;
+        }
+        
+        .points__item {
+            font-size:      14px;
+            letter-spacing: 0.3px;
+            line-height:    20px;
+            list-style:     disk;
+            position:       relative;
+            margin-bottom:  20px;
+        }
+        
+        .points__link--block {
+            display:    block;
+            margin-top: 5px;
+        }
+        
+        .author {
+            font-size:      12px;
+            letter-spacing: 0.3px;
+            line-height:    18px;
+            position:       relative;
+        }
+        
+        .author__name {
+            font-size:      12px;
+            font-weight:    600;
+            letter-spacing: 0;
+            margin-top:     40px;
+            margin-bottom:  0;
+        }
+        
+        .author__text {
+            padding-top: 5px;
+        }
+        
+        .author__link {
+            display:    block;
+            margin-top: 5px;
+        }
+        
+        .author__photo {
+            position: absolute;
+            top:      41px;
+            right:    0;
+            width:    120px;
+            height:   120px;
+        }
+        
+        .separator {
+            display:          inline-block;
+            width:            100%;
+            height:           1px;
+            background-color: #e1e4e6;
+            margin:           50px auto 36px;
+        }
+        
+        .text--small {
+            font-size:      12px;
+            padding-bottom: 20px;
+            letter-spacing: 0.14px;
+            font-family:    "Open Sans", Arial, sans-serif;
+        }
+        
+        .footer {
+            padding: 40px 16px 17px 16px;
+        }
+        
+        .footer-icon {
+            padding: 0 5px;
+            display: inline-block;
+            cursor:  pointer;
+        }
+        
+        .link-unsubscribe {
+            color:         #b9c3cd;
+            border-bottom: 1px solid #b9c3cd;
+        }
+        
+        .link-unsubscribe:hover {
+            color:         #b9c3cd !important;
+            border-bottom: none !important;
+        }
+        
+        .footer-icon img {
+            width:   26px;
+            height:  26px;
+            display: block;
+        }
+        
+        .footer-text {
+            font-size:      12px;
+            color:          #b9c3cd;
+            letter-spacing: 0.14px;
+            font-family:    "Open Sans", Arial, sans-serif;
+        }
+        
+        .mobile-br {
+            display:        inline-block;
+            padding-bottom: 2px;
+        }
+        
+        .semibold {
+            font-weight: 600;
+        }
+        
+        .footnote {
+            max-width:      300px;
+            letter-spacing: 0.3px;
+            line-height:    18px;
+        }
+        
+        .footnote__row {
+            display:   inline-block;
+            max-width: 300px;
+        }
+        
+        .footnote__text {
+            letter-spacing: 0.3px;
+            padding-bottom: 11px;
+        }
+        
+        .footnote__text-bottom {
+            padding-bottom: 1px;
+        }
+        
+        .footnote__link {
+            display: inline;
+        }
+        
+        @media screen and (max-width: 530px) {
+            .email-inner {
+                padding-left:  16px !important;
+                padding-right: 16px !important;
+            }
+            
+            .author__photo {
+                width:  92px;
+                height: 92px;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .wrapper_td {
+                padding: 0 0 20px !important;
+            }
+            
+            .logo {
+                padding-bottom: 40px !important;
+            }
+            
+            .paragraph-name {
+                padding-bottom: 20px;
+            }
+            
+            .paragraph-pb {
+                padding-bottom: 4px !important;
+            }
+            
+            .points {
+                padding-left: 42px;
+            }
+            
+            .mobile-br {
+                display:     block !important;
+                padding-top: 3px !important;
+            }
+            
+            .unsubscribe {
+                padding-bottom: 5px !important;
+                display:        block !important;
+            }
+            
+            .footer-text {
+                color: #b9c3cd !important;
+            }
+            
+            .author__name,
+            .author__text,
+            .author__text {
+                width: 65%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<table class="wrapper" bgcolor="#f5f5f5">
+    <tbody>
+    <tr>
+        <td class="wrapper_td" width="600px" align="center">
+            <table class="email">
+                <tbody>
+                <tr>
+                    <td class="email-inner">
+                        <table class="content">
+                            <tbody>
+                            <tr>
+                                <td class="logo">
+                                    <img src="https://i2.yapics.com/05/27/2327vBaL05.png" alt="Inside Tracker Team" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="semibold paragraph-name">
+                                    Your success is our success!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="paragraph paragraph-pb">
+                                    My name is Avery, and I work on our customer success team. I'm not just here to answer your technical
+                                    questions. I'm also here to help get you over the hurdles you will face as you make changes to your
+                                    diet, activity, and lifestyle habits. Your success is my success, so really - add me to your contact
+                                    list and let me be a guide, a friend, or a helper along your journey. You can find all the different
+                                    ways to contact us below! I've also pointsed a few of our most helpful links for new customers like
+                                    yourself to help you along the InsideTracker journey.list
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="points">
+                                        <li class="points__item">
+                                            Click the link below to download our Ebook and learn more about biomarkers
+                                            <a href="#" class="points__link--block">Biomarker E-Book</a>
+                                        </li>
+                                        <li class="points__item">
+                                            The InsideTracker blog with many insightful articles from our science team
+                                            <a href="#" class="points__link--block">InsideTracker's blog: The InsideTrack</a>
+                                        </li>
+                                        <li class="points__item">
+                                            Our FAQ page that can help answer a lot of questions
+                                            <a href="#" class="points__link--block">InsideTracker Support Center</a>
+                                        </li>
+                                        <li class="points__item">
+                                            You can write a ticket with your question into our support team using the link below as well
+                                            <a href="#" class="points__link--block">Support Center</a>
+                                        </li>
+                                        <li class="points__item">
+                                            If you recently purchased a blood test and plan on going to Quest, don’t forget your lab slip!
+                                            You can download and print right from your account
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="author">
+                                    <h5 class="author__name">Avery Galloway</h5>
+                                    <p class="author__text">Customer Operations Associate</p>
+                                    <p class="author__text">Segterra (InsideTracker) |
+                                        <a href="https://www.insidetracker.com/">insidetracker.com</a>
+                                    </p>
+                                    <p class="author__text">101 Main Street, 14th Fl, Cambridge MA</p>
+                                    <a href="mailto:agalloway@insidetracker.com" class="link author__link">agalloway@insidetracker.com</a>
+                                    <img class="author__photo" src="../assets/img/AveryGalloway.png" alt="author photo">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="separator"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td align="center" class="text--small footnote__text">
+                                    <p class="footnote">
+                                        Chat with us on our website! Just click the chatbox and "I have an account and I need help"
+                                        <span class="mobile-br"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="text--small footnote__text">
+                                    <p class="footnote__row">
+                                        <span class="semibold">Email us: </span>
+                                        <a href="mailto:support@insidetracker.com" class="link footnote__link">support@insidetracker.com</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="text--small footnote__text-bottom">
+                                    <p class="footnote__row">
+                                        <span class="semibold">Call us: </span>
+                                        800-513-2359 - option 2 is our support line
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="text--small footnote__text">
+                                    <p class="footnote__row">
+                                        <span class="semibold"> Text us: </span>
+                                        617-701-6402
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="footer" bgcolor="#f5f5f5">
+                        <div class="footer-icons">
+                            <a class="footer-icon" target="_blank" href="https://www.instagram.com/InsideTracker">
+                                <img src="https://s4.yapics.com/05/27/43273HkL05_th.png" alt="">
+                            </a>
+                            <a class="footer-icon"
+                               target="_blank"
+                               href="http://www.facebook.com/pages/InsideTracker-from-Segterra/271094716266705">
+                                <img src="https://s1.yapics.com/05/27/1327DkAO05_th.png" alt="">
+                            </a>
+                            <a class="footer-icon" target="_blank" href="https://twitter.com/insidetracker">
+                                <img src="https://s5.yapics.com/05/27/5327lr9305_th.png" alt="">
+                            </a>
+                            <a class="footer-icon" target="_blank" href="http://www.linkedin.com/company/segterra">
+                                <img src="https://s5.yapics.com/05/27/5327i78o05_th.png" alt="">
+                            </a>
+                            <a class="footer-icon" target="_blank" href="http://www.youtube.com/user/InsideTracker2?feature=watch">
+                                <img src="https://s5.yapics.com/05/27/5327mVCk05_th.png" alt="">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#f5f5f5">
+                        <div class="unsubscribe footer-text">
+                            <a href="https://insidetracker.com" class="link-unsubscribe">Unsubscribe</a>
+                            from this list
+                        </div>
+                        <div class="footer-text">
+                            101 Main Street Cambridge MA,
+                            <span class="mobile-br"></span>
+                            Phone (800) 513-2359
+                            <span class="mobile-br"></span>
+                        </div>
+                        <div class="footer-text">
+                            &copy;2009-2019 InsideTracker, Inc.
+                            <span class="mobile-br"></span>
+                            All rights reserved.
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,218 @@
+@import "../../../../styles/utils/variables";
+@import (reference) "../../../../components/link/_link";
+
+/*  Hubspot Footer  */
+
+.footer-new {
+    
+    padding:    40px 0 35px;
+    background: @gray1;
+    
+    @media only screen  and (max-width: (@tablet)) {
+        padding: 32px 0 28px;
+    }
+    
+    /*******    Special selector added for hubspot, to kill old styles ***/
+    
+    .link-secondary-light {
+        &:extend(.link-secondary-light);
+    }
+    
+    .link-secondary-light:hover {
+        &:extend(.link-secondary-light:hover);
+    }
+    
+    .link-secondary-light:focus {
+        &:extend(.link-secondary-light:focus);
+    }
+    
+    .link-secondary-light:active {
+        &:extend(.link-secondary-light:active);
+    }
+    
+    /*******    END      ***/
+    
+    &__wrapper {
+        display: flex;
+        
+        @media only screen  and (max-width: (@tablet)) {
+            flex-direction: column;
+            text-align:     center;
+        }
+    }
+    
+    .menu-footer {
+        width:       14.52%;
+        min-width:   150px;
+        white-space: nowrap;
+    }
+    
+    /*******    Special selector added for hubspot, to kill old styles ***/
+    
+    & .footer-new__title {
+        color:          #ffffff;
+        font-weight:    600;
+        line-height:    1.28;
+        letter-spacing: 0.02rem;
+        margin-bottom:  3px;
+        font-size:      14px;
+        
+        @media only screen  and (max-width: (@tablet)) {
+            display: none;
+        }
+        
+    }
+    
+    /*******    END      ***/
+    
+    .menu-footer + .menu-footer {
+        margin-left: 2.56%;
+    }
+    
+    .footer-contacts {
+        margin-left: auto;
+        
+        @media only screen  and (max-width: (@tablet)) {
+            margin-right:    auto;
+            display:         flex;
+            justify-content: center;
+            flex-direction:  column;
+        }
+        
+        .contacts-icons {
+            
+            &-wrap {
+                border-bottom:  1px solid @gray8;
+                padding-bottom: 25px;
+                order:          3;
+                
+                @media only screen  and (max-width: (@tablet)) {
+                    border-bottom: none;
+                    margin-top:    26px;
+                }
+                
+                .social-icon {
+                    display:       block;
+                    width:         26px;
+                    height:        26px;
+                    transition:    .2s ease-in;
+                    border-radius: 6px;
+                    overflow:      hidden;
+                    
+                    @media only screen  and (max-width: (@tablet)) {
+                        width:  32px;
+                        height: 32px;
+                    }
+                    
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+            
+            &__link {
+                display: inline-block;
+                margin:  11px 6px 0 0;
+                
+                @media only screen  and (max-width: (@tablet)) {
+                    width:  32px;
+                    height: 32px;
+                }
+            }
+            
+            &__icon {
+                width:         26px;
+                height:        26px;
+                border-radius: 5px;
+                transition:    .2s ease-in;
+                display:       block;
+                
+                @media only screen  and (max-width: (@tablet)) {
+                    width:  32px;
+                    height: 32px;
+                }
+                
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+                
+                &:active {
+                    transform: scale(1, 1);
+                }
+            }
+        }
+        
+        &-block {
+            margin-top: 25px;
+            
+            @media only screen  and (max-width: (@tablet)) {
+                margin-top: 0;
+            }
+        }
+        
+        &-block + &-block {
+            margin-top: 29px;
+            
+            @media only screen  and (max-width: (@tablet)) {
+                margin-top: 2px;
+            }
+        }
+        
+        .link-secondary-light {
+            font-size: 14px;
+            
+            @media only screen  and (max-width: (@tablet)) {
+                font-size:   16px;
+                line-height: 1.875;
+            }
+            
+            &--sms {
+                position:    relative;
+                display:     none;
+                margin-left: 21px;
+                line-height: 1;
+                
+                @media only screen  and (max-width: (@tablet)) {
+                    display: inline-block;
+                }
+                
+                &::before {
+                    position:   absolute;
+                    content:    '';
+                    background: @gray5;
+                    height:     100%;
+                    width:      1px;
+                    top:        0;
+                    left:       -13px;
+                }
+            }
+        }
+        
+        &__subtitle {
+            color:          @gray5;
+            font-size:      12px;
+            line-height:    1.28;
+            letter-spacing: 0.12px;
+            margin-top:     11px;
+            
+            @media only screen  and (max-width: (@tablet)) {
+                margin-top: 18px;
+            }
+        }
+    }
+    
+    .copyright {
+        margin-top: 28px;
+        
+        @media only screen  and (max-width: (@tablet)) {
+            text-align: center;
+            margin-top: 24px;
+        }
+        
+        &-text {
+            color:       @gray3;
+            font-size:   12px;
+            line-height: 1.5;
+        }
+    }
+}

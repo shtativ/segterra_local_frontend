@@ -1,0 +1,87 @@
+<div class="padding-block"></div>
+<section class="description">
+    <div class="container">
+        <div class="description__img">
+            <!--<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}">-->
+        </div>
+        <div class="description__wrapper">
+            <h1 class="title description__title">Short descriptive header</h1>
+            <p class="text description__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus lectus, pretium ut velit vel, ultrices gravida
+                turpis. Sed id odio id turpis ultricies congue. Aliquam erat volutpat. Duis nec erat id sapien accumsan aliquet. </p>
+            <p class="text description__text">
+                Cras suscipit accumsan arcu, ut egestas lacus vulputate vel. In lacus quam, finibus sit amet molestie in, vulputate quis
+                arcu. Duis lacus sem, pharetra vel hendrerit eu, finibus et libero. </p>
+            <button type="button" class="btn description__btn">INSERT CTA COPY</button>
+            <!--<h1 class="title description__title">{% inline_text field="title" value="{{ module.title }}" %}</h1>-->
+            <!--<p class="text description__text">-->
+                <!--{{ module.description }}</p>-->
+            <!--<p class="text description__text">-->
+                <!--{{ module.description_copy }} </p>-->
+        </div>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <div class="products__wrapper">
+            <h2 class="title products__title">Start getting precisely personalized</h2>
+            <ul class="products__list">
+                <li class="products__item">
+                    <img class="products__icon"
+                         src="assets/img/rigr/gray_checklist.svg"
+                         alt="Tell us about yourself and your health goals">
+                    <span class="products__num">1</span>
+                    <span class="products__subtitle">Tell us about yourself and your health goals</span>
+                    <span class="products__text">Start our consultation to create a personalized supplement plan.</span>
+                </li>
+                <li class="products__item">
+                    <img class="products__icon" src="assets/img/rigr/half_brain.svg" alt="Get your personalized plan">
+                    <span class="products__num">2</span>
+                    <span class="products__subtitle">Get your personalized plan</span>
+                    <span class="products__text">Receive your personalized plan including supplements selected just for you, plus personalized lifestyle and nutrition recommendations.</span>
+                </li>
+                <li class="products__item">
+                    <img class="products__icon" src="assets/img/rigr/green_drugs.svg" alt="Take your supplements daily">
+                    <span class="products__num">3</span>
+                    <span class="products__subtitle">Take your supplements daily</span>
+                    <span class="products__text">You'll get a 30-day supply of supplement packs delivered right to your door.</span>
+                </li>
+                <li class="products__item">
+                    <img class="products__icon" src="assets/img/rigr/yellow_graph.svg" alt="Follow your plan, track your progress">
+                    <span class="products__num">4</span>
+                    <span class="products__subtitle">Follow your plan, track your progress</span>
+                    <span class="products__text">Your body changes over time as you adopt new habits. We’ll adjust your plan as your needs change.</span>
+                </li>
+            </ul>
+            <a href="#" class="btn products__btn">START CONSULTATION</a>
+        </div>
+    </div>
+</section>
+<section class="sign-up">
+    <div class="container sign-up__container">
+        <h2 class="title sign-up__title">Sign up for lorem ipsum</h2>
+        <form action="" class="sign-up__form">
+            <label class="textfield-outlined" for="firstname">
+                <input type="text" placeholder=" " required id="firstname">
+                <span>First name</span>
+            </label>
+            <label class="textfield-outlined" for="lastname">
+                <input type="text" placeholder=" " required id="lastname">
+                <span>Last name</span>
+            </label>
+            <label class="textfield-outlined" for="signemail">
+                <input type="email" placeholder=" " required id="signemail">
+                <span>Email address</span>
+            </label>
+            <button type="submit" class="btn sign-up__btn">SUBMIT</button>
+        </form>
+        <!--{% form class="sign-up__form"-->
+        <!--form_to_use="{{ module.signup_form.form_id }}"-->
+        <!--response_response_type="{{ module.signup_form.response_type }}"-->
+        <!--response_message="{{ module.signup_form.message }}"-->
+        <!--response_redirect_id="{{ module.signup_form.redirect_id }}"-->
+        <!--response_redirect_url="{{module.signup_form.redirect_url}}"-->
+        <!--gotowebinar_webinar_key="{{ module.signup_form.gotowebinar_webinar_key }}"-->
+        <!--%}-->
+    </div>
+</section>

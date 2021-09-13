@@ -1,0 +1,142 @@
+<!--Component Popups-->
+
+<!--new  format link-->
+<!--<p class="text-14">-->
+<!--  Click-->
+<!--  <a id="popupBtn1" class="link-primary" href="#" onclick="return false">here</a>-->
+<!--  to view popup-->
+<!--</p>-->
+<!--\new  format link-->
+
+<div class="link-wrap">
+    <a id="popupBtn1" class="link-primary" href="#" onclick="return false">Regular <br />[*click me*]</a>
+    <a id="popupBtn2" class="link-primary" href="#" onclick="return false">Regular-fill mobile <br />[*click me*]</a>
+    <a id="popupBtn3" class="link-primary" href="#" onclick="return false">Large-recipe <br />[*click me*]</a>
+    <a id="popupBtn4" class="link-primary" href="#" onclick="return false">Fullscreen <br />[*click me*]</a>
+</div>
+
+<!--regular popup BEGIN-->
+<article id="popup1" class="popup hide">
+    <div class="close-block close-block--cards">
+        <a id="closeX1" href="#" onclick="return false" class="close-block__link">
+            <i class="close-block__icon icon-sys-close"></i>
+        </a>
+    </div>
+    <h2 class="heading-20 cancel-popup__title">Regular popup</h2>
+    <p class="text-14 cancel-popup__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
+    <div class="btn-block btn-block--right">
+        <a id="close-btn1" href="#" onclick="return false" class="btn-secondary">Secondary</a>
+        <a href="#" onclick="return false" class="btn-primary">Primary</a>
+    </div>
+</article>
+<!--regular popup END-->
+
+<!--regular popup mobile fill BEGIN-->
+<article id="popup2" class="popup popup--m-fill hide">
+    <div class="close-block close-block--cards">
+        <a id="closeX2" href="#" onclick="return false" class="close-block__link">
+            <i class="close-block__icon icon-sys-close"></i>
+        </a>
+    </div>
+    <h2 class="heading-20 cancel-popup__title">Regular popup</h2>
+    <p class="text-14 cancel-popup__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
+    <div class="btn-block btn-block--right">
+        <a id="close-btn2" href="#" onclick="return false" class="btn btn-secondary">Secondary</a>
+        <a href="#" onclick="return false" class="btn btn-primary">Primary</a>
+    </div>
+</article>
+<!--regular popup END-->
+
+<!--component Large popup BEGIN-->
+<article id="popup3" class="popup--lg hide">
+    <div class="popup-left__side recipe__img">
+        <span class="popup-left__image hide-tablet" style="background-image: url('assets/img/card/lemon.jpg');"></span>
+        <!--change the images-->
+        <span class="popup-left__image show-tablet" style="background-image: url('assets/img/card/lemon.jpg');"></span>
+        <!--change the images-->
+    </div>
+    <article class="recipe__info">
+        <div class="close-block close-block--cards">
+            <a id="closeX3" href="#" onclick="return false" class="close-block__link">
+                <i class="close-block__icon icon-sys-close"></i>
+            </a>
+        </div>
+        <h2 class="heading-20 recipe__info-title">Large popup</h2>
+        <p class="recipe__info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+
+        <div class="recipe-recommendation recipe-recommendation--full-width">
+            <h5 class="text-12 recipe-list__title">Highlighted items</h5>
+            <ul class="recipe-list recipe-list--full-width">
+                <li class="recipe-list__item">Item 1</li>
+                <li class="recipe-list__item">Item 2</li>
+                <li class="recipe-list__item">Item 3</li>
+                <li class="recipe-list__item">Item 4</li>
+                <li class="recipe-list__item">Item 5</li>
+                <li class="recipe-list__item">Item 6</li>
+            </ul>
+        </div>
+
+        <div class="recipe-recommendation">
+            <h5 class="text-12 recipe-list__title recipe-list__title--middle">List inside popup</h5>
+            <ul class="recipe-list recipe-list">
+                <li class="recipe-list__item">Item 1</li>
+                <li class="recipe-list__item">Item 2</li>
+                <li class="recipe-list__item">Item 3</li>
+                <li class="recipe-list__item">Item 4</li>
+                <li class="recipe-list__item">Item 5</li>
+            </ul>
+        </div>
+        <div class="recipe-wrapper__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            <p>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident,</p>
+            <p>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </article>
+</article>
+
+<!--component Large popup END-->
+
+<!--component overlay popup BEGIN-->
+<article id="popup4" class="popup-overlay hide">
+    <div class="close-block close-block--cards">
+        <a id="closeX4" href="#" onclick="return false" class="close-block__link">
+            <i class="close-block__icon icon-sys-close"></i>
+        </a>
+    </div>
+    <div class="use-test-overlay__icon"></div>
+    <div class="container">
+        <h2 class="heading-24 popup-overlay__title">
+            Full screen takeover </h2>
+        <p class="text-16 popup-overlay__text">
+            Check out the instructions for your next blood test. Pay close attention as they may require fasting before your blood is
+            drawn. </p>
+    </div>
+    <div class="btn-wrapper">
+        <div class="btn-block btn-block--centered">
+            <button id="close-btn4" class="btn btn-secondary" onclick="location.href='insidetracker.com'">
+                <span class="hide-tablet--inline">Secondary D</span>
+                <span class="show-tablet--inline">Secondary M</span>
+            </button>
+            <button class="btn btn-primary" onclick="location.href='insidetracker.com'" target="_blank">
+                <span class="hide-tablet--inline">Primary D</span>
+                <span class="show-tablet--inline">Primary M</span>
+            </button>
+        </div>
+        <a href="#" onclick="return false" class="link link-secondary-light" id="skip-personalization-link">Secondary link</a>
+    </div>
+</article>
+<!--component overlay popup END-->
+
+
+
+<div id="screen" class="screen"></div>
+
+<div id="screen2" class="screen"></div>
+<div id="screen3" class="screen"></div>
+<div id="screen4" class="screen"></div>

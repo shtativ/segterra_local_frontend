@@ -1,0 +1,150 @@
+<!--Table component-->
+
+<div class="table">
+    <div class="table__head">
+        <div class="table__cell table__cell--title">First column</div>
+        <div class="table__cell table__cell--bold">Row headline</div>
+        <div class="table__cell">Row standard</div>
+        <div class="table__cell"><span class="table__icon"></span>Row with icon</div>
+        <div class="table__cell table__cell--sub">Sub row</div>
+        <div class="table__cell table__cell--bigger">Row standard <br>
+            <a href="#" onclick="return false" class="link-primary">with link</a> in text</div>
+        <div class="table__cell table__cell--disabled">Row disabled</div>
+        <div class="table__cell table__cell--biggest">If text does not fit into a table cell, you may
+            truncate text or use a tooltip [ ... ]</div>
+    </div>
+    <div class="table__body">
+        <div class="table-swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="table__column swiper-slide">
+                    <div class="table__cell table__cell--title">Column</div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--yellow"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--orange"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--brown"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                    <div class="table__cell table__cell--bigger">
+                        <div class="checkbox table__checkbox">
+                            <input checked class="checkbox__field" id="checkbox" name="checkbox" type="checkbox">
+                            <svg class="checkbox__icon icon-checked">
+                                <use xlink:href="assets/sprite.svg#icon-checked"></use>
+                            </svg>
+                            <label class="checkbox__label" for="checkbox"></label>
+                        </div>
+                    </div>
+                    <div class="table__cell table__cell--disabled"></div>
+                    <div class="table__cell table__cell--biggest">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                </div>
+                <div class="table__column swiper-slide">
+                    <div class="table__cell table__cell--title">Column</div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--yellow"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--orange"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--brown"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                    <div class="table__cell table__cell--bigger">
+                        <div class="checkbox table__checkbox">
+                            <input checked class="checkbox__field" id="checkbox2" name="checkbox" type="checkbox">
+                            <svg class="checkbox__icon icon-checked">
+                                <use xlink:href="assets/sprite.svg#icon-checked"></use>
+                            </svg>
+                            <label class="checkbox__label" for="checkbox2"></label>
+                        </div>
+                    </div>
+                    <div class="table__cell table__cell--disabled"></div>
+                    <div class="table__cell table__cell--biggest">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                </div>
+                <div class="table__column swiper-slide">
+                    <div class="table__cell table__cell--title">Column</div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--yellow"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--orange"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--brown"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                    <div class="table__cell table__cell--bigger">
+                        <div class="checkbox table__checkbox">
+                            <input checked class="checkbox__field" id="checkbox3" name="checkbox" type="checkbox">
+                            <svg class="checkbox__icon icon-checked">
+                                <use xlink:href="assets/sprite.svg#icon-checked"></use>
+                            </svg>
+                            <label class="checkbox__label" for="checkbox3"></label>
+                        </div>
+                    </div>
+                    <div class="table__cell table__cell--disabled"></div>
+                    <div class="table__cell table__cell--biggest">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                </div>
+                <div class="table__column swiper-slide">
+                    <div class="table__cell table__cell--title">Column</div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--yellow"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--orange"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--brown"></span>
+                    </div>
+                    <div class="table__cell">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                    <div class="table__cell table__cell--bigger">
+                        <div class="checkbox table__checkbox">
+                            <input checked class="checkbox__field" id="checkbox4" name="checkbox" type="checkbox">
+                            <svg class="checkbox__icon icon-checked">
+                                <use xlink:href="assets/sprite.svg#icon-checked"></use>
+                            </svg>
+                            <label class="checkbox__label" for="checkbox4"></label>
+                        </div>
+                    </div>
+                    <div class="table__cell table__cell--disabled"></div>
+                    <div class="table__cell table__cell--biggest">Data
+                        <span class="table__dot table__dot--green"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-arrow table-arrow-prev">
+            <svg class="icon icon-swiper--prev">
+                <use xlink:href="assets/sprite.svg#icon-swiper-arrow"/>
+            </svg>
+        </div>
+        <div class="table-arrow table-arrow-next">
+            <svg class="icon icon-swiper--next">
+                <use xlink:href="assets/sprite.svg#icon-swiper-arrow"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="shadow-block">
+        <div class="shadow-block__title">First column</div>
+        <div class="shadow-block__title">Column</div>
+    </div>
+
+</div>

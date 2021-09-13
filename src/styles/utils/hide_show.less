@@ -1,0 +1,62 @@
+@import '../../styles/utils/variables';
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide-tablet {
+    @media only screen  and(max-width: (@tablet)) {
+        display: none !important;
+    }
+}
+
+.show-tablet {
+    @media only screen  and(min-width: (@show_tablet)) {
+        display: none !important;
+    }
+}
+
+.hide-tablet--horizontal {
+    @media only screen  and(max-width: (@tablet_horizontal)) {
+        display: none !important;
+    }
+}
+
+.show-tablet--horizontal {
+    @media only screen  and(min-width: (@show_tablet_horizontal)) {
+        display: none !important;
+    }
+}
+
+.hide-big_mobile {
+    @media only screen  and(max-width: (@big_mobile)) {
+        display: none !important;
+    }
+}
+
+.show-big_mobile {
+    @media only screen  and(min-width: (@show_big_mobile)) {
+        display: none !important;
+    }
+}
+
+.hide-mobile {
+    display: block;
+    @media only screen  and(max-width: (@mobile)) {
+        display: none !important;
+    }
+}
+
+.show-mobile {
+    @media only screen  and(min-width: (@show_mobile)) {
+        display: none !important;
+    }
+}
+
+.hidden {
+    visibility: hidden !important;
+}

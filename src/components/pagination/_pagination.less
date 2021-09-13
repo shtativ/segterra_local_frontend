@@ -1,0 +1,93 @@
+@import "../../styles/utils/variables";
+
+.pagination {
+    &__list {
+        display:     flex;
+        align-items: center;
+        margin-top:  60px;
+    }
+    
+    &__item {
+        width:           36px;
+        height:          36px;
+        margin:          0 4px;
+        color:           @primary;
+        cursor:          pointer;
+        user-select:     none;
+        border-radius:   4px;
+        font-family:     "Open Sans", Arial, sans-serif;
+        font-size:       14px;
+        font-weight:     600;
+        text-transform:  uppercase;
+        letter-spacing:  0.14px;
+        display:         flex;
+        align-items:     center;
+        justify-content: center;
+        line-height:     0;
+        @media only screen and (max-width: @min_mobile) {
+            height: 30px;
+            margin: 0 2px;
+        }
+    }
+    
+    &__number {
+        &--active {
+            color:            #ffffff;
+            background-color: @primary;
+        }
+        
+        &:hover:not(.pagination__number--active) {
+            background-color: @blue1;
+        }
+    }
+    
+    &__ellipsis {
+        color: @gray1;
+    }
+    
+    &__prev, &__next {
+        position: relative;
+        
+        &:hover {
+            background-color: @blue1;
+        }
+        
+        svg {
+            fill:         none;
+            stroke:       @primary;
+            stroke-width: 2px;
+            width:        36px;
+            height:       15px;
+        }
+    }
+    
+    &__next {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+    
+}
+
+.pagination-circle {
+    
+    &__list {
+        display:     flex;
+        align-items: center;
+        margin-top:  30px;
+    }
+    
+    &__link {
+        width:            8px;
+        height:           8px;
+        margin:           0 5px;
+        background-color: @gray5;
+        cursor:           pointer;
+        user-select:      none;
+        border-radius:    50%;
+        
+        &.active {
+            background-color: @primary;
+        }
+    }
+}

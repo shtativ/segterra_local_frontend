@@ -1,0 +1,102 @@
+@import '../../styles/utils/variables';
+
+.checkbox {
+    position:      relative;
+    margin-bottom: 15px;
+    
+    &__field {
+        display: none;
+    }
+    
+    &__icon {
+        width:          11px;
+        height:         9px;
+        fill:           #ffffff;
+        position:       absolute;
+        top:            4px;
+        left:           4px;
+        z-index:        3;
+        pointer-events: none;
+        display:        none;
+    }
+    
+    &__label {
+        position:       relative;
+        cursor:         pointer;
+        padding-left:   27px;
+        margin:         0 0 24px 0;
+        color:          @gray1;
+        letter-spacing: 0.2px;
+        line-height:    1.5;
+        font-weight:    400;
+        user-select:    none;
+        font-size:      14px;
+        display:        block;
+        
+        &:before {
+            content:       '';
+            border-radius: 4px;
+            box-sizing:    border-box;
+            width:         18px;
+            height:        18px;
+            background:    transparent;
+            border:        1px solid @gray6;
+            position:      absolute;
+            top:           -1px;
+            left:          0;
+        }
+    }
+}
+
+.checkbox__field:checked + .checkbox__icon {
+    display: block;
+}
+
+.checkbox__field:disabled + .checkbox__icon {
+    opacity: 0.3;
+}
+
+.checkbox__field:disabled ~ .checkbox__label {
+    opacity: 0.3;
+}
+
+.checkbox__field:checked ~ .checkbox__label::before {
+    background-color: @primary;
+    border:           1px solid @primary;
+}
+
+.checkbox--sm {
+    margin-bottom: 6px;
+    
+    .checkbox__label {
+        font-size:    12px;
+        padding-left: 23px;
+        
+        &:before {
+            width:  14px;
+            height: 14px;
+        }
+    }
+    
+    .checkbox__icon {
+        width:  10px;
+        height: 7px;
+        left:   2px;
+    }
+}
+
+.checkboxes-wrap {
+    display: flex;
+}
+
+.checkboxes-column {
+    margin-left: 60px;
+    
+    &:first-child {
+        margin-left: 0;
+    }
+    
+    @media screen and (max-width: 400px) {
+        margin-left: 30px;
+    }
+}

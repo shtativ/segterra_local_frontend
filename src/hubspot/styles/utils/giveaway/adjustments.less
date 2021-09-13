@@ -1,0 +1,73 @@
+@import "variables";
+
+body, html {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    font-family:             @main_font;
+    line-height:             @main_line_height;
+    font-size:               @main_font_size;
+    font-weight:             @main_font_weight;
+    color:                   @main_fontColor;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    @media (max-width: (@small_screen_width)) {
+        font-size: @info_font_size;
+    }
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+ul {
+    margin:  0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:           currentColor;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    background: none;
+    border:     none;
+    color:      currentColor;
+}
+
+input::placeholder {
+    color: currentColor;
+}
+
+//SVG icons
+
+.icon {
+    display:      inline-block;
+    width:        1em;
+    height:       1em;
+    stroke-width: 0;
+    stroke:       currentColor;
+    fill:         currentColor;
+}
+
+.container--flex {
+    display:         flex;
+    justify-content: space-between;
+    
+    @media only screen  and(max-width: (@tablet_horizontal)) {
+        flex-direction:  column;
+        justify-content: flex-start;
+    }
+}

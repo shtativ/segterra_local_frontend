@@ -1,0 +1,216 @@
+@import '../../styles/utils/variables';
+@import '../../styles/utils/mixins';
+
+// this styles only for the frontify structure
+//**********************************************
+
+.links-table {
+    border:    1px solid @gray7;
+    padding:   20px 0 0 0;
+    max-width: 235px;
+    
+    &--dark {
+        border:  1px solid #ffffff;
+        margin:  30px 0 0;
+        padding: 0;
+    }
+    
+    &--dark .links-row {
+        padding:          20px 0 0 0;
+        background-color: @gray1;
+        
+        &:last-child {
+            padding: 0;
+        }
+    }
+}
+
+.links-item {
+    padding:      0 0 20px 0;
+    min-width:    170px;
+    text-align:   left;
+    margin-right: 40px;
+}
+
+.links-row {
+    display: flex;
+    
+    .links-item:first-child {
+        margin-left: 20px;
+    }
+}
+
+.links-state {
+    background-color: @primary-light--hover;
+    padding:          5px 20px;
+    cursor:           default;
+    letter-spacing:   0.12px;
+    color:            @gray1;
+    margin-right:     130px;
+    text-align:       center;
+    min-width:        80px;
+    line-height:      16px;
+    font-size:        12px;
+    font-weight:      600;
+    
+    &:first-child {
+        margin-left: 20px;
+    }
+}
+
+//**********************************************
+// this styles only for the frontify structure
+//**********************************************
+
+// Inside Tracker
+//**********************************************
+// link styles component
+// for using it will be better to add necessary class to the link
+//**********************************************
+
+.link-primary {
+    transition:      all 0.2s ease-in-out;
+    color:           @primary;
+    cursor:          pointer;
+    text-decoration: none;
+    font-size:       14px;
+    
+    &--hover,
+    &:hover,
+    &:focus {
+        color:           @primary--hover;
+        text-decoration: underline;
+    }
+    
+    &--active,
+    &:active {
+        color:           @primary--active;
+        text-decoration: underline;
+    }
+    
+    &--disabled {
+        cursor:          not-allowed;
+        color:           @primary;
+        text-decoration: none;
+        opacity:         0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            opacity:         0.3;
+            color:           @primary;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+.link-secondary {
+    transition:      all 0.2s ease-in-out;
+    color:           @gray3;
+    cursor:          pointer;
+    text-decoration: none;
+    font-size:       14px;
+    
+    &--hover,
+    &:hover,
+    &:focus {
+        color:           @gray5;
+        text-decoration: underline;
+    }
+    
+    &--active,
+    &:active {
+        color:           @gray2;
+        text-decoration: underline;
+    }
+    
+    &--disabled {
+        cursor:          not-allowed;
+        color:           @gray3;
+        text-decoration: none;
+        opacity:         0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            opacity:         0.3;
+            color:           @gray3;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+.link-white {
+    transition:      all 0.2s ease-in-out;
+    color:           #ffffff;
+    cursor:          pointer;
+    text-decoration: none;
+    font-size:       14px;
+    
+    &--hover,
+    &:hover,
+    &:focus {
+        color:           @gray4;
+        text-decoration: underline;
+    }
+    
+    &--active,
+    &:active {
+        color:           @gray6;
+        text-decoration: underline;
+    }
+    
+    &--disabled {
+        cursor:          not-allowed;
+        color:           #ffffff;
+        text-decoration: none;
+        opacity:         0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            opacity:         0.3;
+            color:           #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+
+.link-secondary-light {
+    transition:      all 0.2s ease-in-out;
+    color:           @gray5;
+    cursor:          pointer;
+    text-decoration: none;
+    font-size:       14px;
+    
+    &--hover,
+    &:hover,
+    &:focus {
+        color:           @gray7;
+        text-decoration: underline;
+    }
+    
+    &--active,
+    &:active {
+        color:           @gray2;
+        text-decoration: underline;
+    }
+    
+    &--disabled {
+        cursor:          not-allowed;
+        color:           @gray6;
+        text-decoration: none;
+        opacity:         0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            opacity:         0.3;
+            color:           @gray6;
+            text-decoration: none;
+        }
+    }
+}
+

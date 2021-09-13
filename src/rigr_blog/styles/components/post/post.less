@@ -1,0 +1,76 @@
+@import "../../utils/common";
+
+.post {
+    font-family:    'Open Sans', Arial, sans-serif;
+    margin-bottom:  70px;
+    display:        flex;
+    flex-direction: column;
+    
+    img {
+        max-width:     100%;
+        height:        auto;
+        margin-bottom: 40px;
+        display:       block;
+        
+        @media screen and (max-width: (@tablet)) {
+            margin-bottom: 32px;
+        }
+    }
+    
+    h1 {
+        font-family:   'Open Sans', Arial, sans-serif;
+        font-size:     22px;
+        font-weight:   700;
+        line-height:   34px;
+        margin-bottom: 15px;
+        
+        @media screen and (max-width: (@tablet)) {
+            font-size:   18px;
+            line-height: 28px;
+        }
+    }
+    
+    h4 {
+        color:         #8e8e8c;
+        font-size:     12px;
+        line-height:   18px;
+        margin-bottom: 27px;
+        font-weight:   normal;
+    }
+    
+    p {
+        font-size:     16px;
+        line-height:   24px;
+        margin-bottom: 25px;
+    }
+    
+    h3 {
+        margin-bottom: 22px;
+        font-weight:   700;
+    }
+    
+    &-item {
+        h1 {
+            font-family: Arvo, Arial, sans-serif;
+            font-size:   28px;
+            line-height: 40px;
+            font-weight: normal;
+        }
+    }
+}
+
+.prev-link {
+    position:      relative;
+    margin-bottom: 48px;
+    font-size:     16px;
+    display:       block;
+    
+    svg {
+        width:        25px;
+        height:       18px;
+        fill:         #12a0d2;
+        position:     relative;
+        top:          3px;
+        margin-right: 12px;
+    }
+}

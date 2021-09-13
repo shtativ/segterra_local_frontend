@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+     y="0px" viewBox="0 0 136 136" style="enable-background:new 0 0 136 136;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FEDC00;}
+	.st2{fill:#18A1D2;}
+	.st3{fill:#80BB41;}
+	.st4{fill:#231F20;}
+	.st5{fill:#010101;}
+</style>
+  <g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="0.26" y="0.5" width="135" height="135.5" />
+			</defs>
+      <use xlink:href="#SVGID_1_" style="overflow:visible;fill:#FFFFFF;" />
+      <clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_" style="overflow:visible;" />
+			</clipPath>
+      <g class="st0">
+				<g>
+					<polygon class="st1" points="0.26,136.16 50.92,73.9 72.04,100.44 135.26,1.08 135.26,136.16 					" />
+				</g>
+        <g>
+
+						<rect x="67.57" y="67.93" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 206.8467 49.1727)" class="st2"
+                  width="22.54" height="120.17" />
+				</g>
+        <g>
+					<rect x="-0.53" y="1.18" class="st3" width="21.03" height="117.96" />
+				</g>
+        <g>
+					<rect x="0.5" y="116.26" class="st4" width="21.5" height="19.97" />
+				</g>
+        <g>
+					<g>
+						<polygon class="st4" points="20.91,114.69 20.75,111.13 50.61,70.25 71.67,96.74 109.49,39.15 111.72,40.61 71.88,101.28
+							50.72,74.67 						" />
+					</g>
+          <g>
+						<g>
+							<polygon class="st4"
+                       points="111.52,47.29 110.14,40.58 103.45,41.97 105.7,38.54 112.39,37.15 113.78,43.86 							" />
+						</g>
+					</g>
+				</g>
+        <g>
+					<polygon class="st4"
+                   points="133.25,116.91 20.36,116.91 20.36,7.21 21.31,7.21 21.31,115.96 133.25,115.96 					" />
+				</g>
+        <g>
+					<rect x="11.77" y="38.21" class="st4" width="9.06" height="0.95" />
+				</g>
+        <g>
+					<rect x="39.98" y="116.44" class="st4" width="0.95" height="9.13" />
+				</g>
+        <g>
+					<rect x="59.64" y="116.44" class="st4" width="0.95" height="9.13" />
+				</g>
+        <g>
+					<rect x="79.3" y="116.44" class="st4" width="0.95" height="9.13" />
+				</g>
+        <g>
+					<rect x="98.96" y="116.44" class="st4" width="0.95" height="9.13" />
+				</g>
+        <g>
+					<rect x="118.62" y="116.44" class="st4" width="0.95" height="9.13" />
+				</g>
+        <g>
+					<rect x="11.77" y="58.15" class="st4" width="9.06" height="0.95" />
+				</g>
+        <g>
+					<rect x="11.77" y="78.09" class="st4" width="9.06" height="0.95" />
+				</g>
+        <g>
+					<rect x="11.77" y="98.02" class="st4" width="9.06" height="0.95" />
+				</g>
+        <g>
+					<rect x="11.77" y="20.01" class="st4" width="9.06" height="0.95" />
+				</g>
+			</g>
+		</g>
+	</g>
+    <g>
+		<g>
+			<path class="st5" d="M131,5.01v125.97H5V5.01H131 M136,0H0v135.98h136V0L136,0z" />
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,89 @@
+@import "../../styles/utils/variables";
+
+.tab {
+    text-align: center;
+    width:      100%;
+    
+    &-menu {
+        width:           100%;
+        border-bottom:   1px solid @gray4;
+        display:         flex;
+        justify-content: center;
+        margin:          35px 0 5px;
+        
+        &__item {
+            padding:         14px 20px;
+            text-transform:  uppercase;
+            color:           @gray1;
+            letter-spacing:  0.56px;
+            text-decoration: none;
+            font-size:       14px;
+            font-weight:     600;
+            position:        relative;
+            
+            @media screen and (max-width: (@mobile)) {
+                padding: 14px 10px;
+            }
+            
+            &.active {
+                color: @primary;
+                
+                &::after {
+                    content:          '';
+                    background-color: @primary;
+                    position:         absolute;
+                    bottom:           -1px;
+                    width:            100%;
+                    height:           2px;
+                    left:             0;
+                }
+            }
+            
+            &.disabled {
+                opacity:        0.3;
+                pointer-events: none;
+            }
+            
+            &:hover {
+                &::after {
+                    content:          '';
+                    background-color: @primary;
+                    position:         absolute;
+                    bottom:           -1px;
+                    width:            100%;
+                    height:           2px;
+                    left:             0;
+                }
+            }
+        }
+    }
+    
+    &-content {
+        margin:     35px 0;
+        text-align: center;
+        
+        &__item {
+            display: none;
+            
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+/*
+.hide-tablet {
+    display: inline;
+    @media screen and (max-width: (@tablet)) {
+        display: none;
+    }
+}
+
+
+.show-tablet {
+    display: none;
+    @media screen and (max-width: (@tablet)) {
+        display: inline;
+    }
+}*/

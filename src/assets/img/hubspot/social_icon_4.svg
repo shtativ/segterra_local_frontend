@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="40"
+     height="40"
+     viewBox="0 0 40 40">
+    <g>
+        <image width="20.96"
+               height="20.96"
+               transform="translate(9.52 9.52)"
+               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABXElEQVQ4T+2UvUsCYRzHP895KtJf0xhBBC0RWA2GtQYGQkEKESSEi5RcaA2mQ+EQRElBWYtLQUTq0NAQDS1BY0PQ5svdEzno3SlyUNDisz0PPz58X57nEXoAyR8uMQD+Os3/zlABjL4unCsMxBH+CE2ho368IKKjGKKb3RdoTEeQxV3Uk08oZmF2vUMoFzDS89iZXUBdAbch+FJ9DB28U4sO48u8wXUSZjpAIaEW9ODRdYQi22otQN0fQS+foyYfkPtLiLULZH4F12IGcalZFZrcGofLiFIWkFgVpp+pn8bxrh4hcyFEOE/9eAPvQgJ5tWNRaE5PvlYhNtI6sgClVqG+NYdbe6QZn0BsV1ESU6ibJWQxhTBn2CZKZCqIrJy18uyZoZK4ox4bw6vd04iO492rYNwWEJNhW60GjVwI19NNu5yeLf98P+b27HuLXdus83vo8FEOgA6D6jP2DTFBmlVZeJoOAAAAAElFTkSuQmCC" />
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <script crossorigin="anonymous"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script type="application/javascript" src="https://test.segterra.com/skin/js/typeahead.js"></script>
+    
+    <title>hubspot Rigr Blog</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+    <link href="style/rigrBlogStyles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Rigr Blog -->
+
+<!--@@include('rigr_blog/modules/_rigr-header.html')-->
+<!--@@include('rigr_blog/modules/_header-white.html')-->
+<!--@@include('rigr_blog/modules/_banner.html')-->
+<div class="container">
+    <div class="flex">
+<!--        @@include('rigr_blog/modules/_rigr-post-list.html')-->
+        @@include('rigr_blog/modules/_rigr-post.html')
+        @@include('rigr_blog/modules/_rigr-right-panel.html')
+    </div>
+</div>
+
+
+@@include('rigr_blog/modules/_rigr-footer.html')
+@@include('rigr_blog/modules/popups/_faq.html')
+@@include('rigr_blog/modules/popups/_policy.html')
+@@include('rigr_blog/modules/popups/_terms.html')
+
+@@include('modules/_blogrigrscripts.html')
+</body>
+</html>

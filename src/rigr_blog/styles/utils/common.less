@@ -1,0 +1,225 @@
+@import "variables";
+@import "adjustments";
+
+.container {
+    max-width: @desktop;
+    margin:    0 auto;
+    position:  relative;
+    padding:   84px 16px 100px;
+    
+    @media screen and (max-width: (@mid_width)) {
+        padding-top:    44px;
+        padding-bottom: 60px;
+    }
+}
+
+.content {
+    margin-top: 130px;
+    
+    width:      calc(100% - 420px);
+    color:      #000000;
+    
+    @media screen and (max-width: (@mid_width)) {
+        width: 100%;
+    }
+}
+
+.title {
+    color:       @text;
+    font-family: Arvo, Arial, sans-serif;
+    font-weight: 400;
+    font-size:   38px;
+    line-height: 1.2;
+    text-align:  center;
+    margin:      0 0 29px;
+    
+    @media screen and (max-width: (@tablet)) {
+        line-height: 1.2;
+    }
+}
+
+.text {
+    color:       @text;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size:   18px;
+    line-height: 1.6;
+    text-align:  center;
+    font-weight: 400;
+    margin:      0 0 26px;
+    @media screen and (max-width: (@tablet)) {
+        letter-spacing: 0;
+    }
+}
+
+.btn {
+    transition:       all 0.3s ease-out;
+    box-sizing:       border-box;
+    font-size:        14px;
+    font-weight:      700;
+    line-height:      56px;
+    height:           56px;
+    cursor:           pointer;
+    text-transform:   uppercase;
+    background-color: @blue;
+    border:           0;
+    font-family:      "Open Sans", Arial, sans-serif;
+    text-decoration:  none;
+    display:          block;
+    padding:          0 15px;
+    color:            #ffffff;
+    width:            246px;
+    outline:          none;
+    margin:           0 auto;
+    letter-spacing:   0.08em;
+    text-align:       center;
+    white-space:      nowrap;
+    text-overflow:    ellipsis;
+    
+    &:hover,
+    &:focus {
+        text-decoration:  none;
+        background-color: @blue_hover;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:           default;
+        opacity:          0.3;
+        background-color: @gray_5;
+    }
+    
+    @media screen and (max-width: (@big_tablet)) {
+        padding: 0;
+    }
+    
+    &-bordered {
+        &:extend(.btn);
+        display:         flex;
+        border:          2px solid #ffffff;
+        line-height:     1;
+        height:          54px;
+        background:      none;
+        flex-grow:       1;
+        justify-content: center;
+        align-items:     center;
+        
+        &:hover,
+        &:focus {
+            color:      @blue;
+            background: #ffffff;
+        }
+    }
+    
+    &-bordered--gray {
+        &:extend(.btn);
+        border:           2px solid @gray_5;
+        background-color: #ffffff;
+        color:            @blue;
+        
+        &:hover,
+        &:active {
+            background-color: rgba(186, 188, 190, 0.1);
+            color:            @blue_hover;
+        }
+    }
+    
+    &-white {
+        &:extend(.btn);
+        color:            @blue;
+        background-color: #ffffff;
+        
+        &:hover,
+        &:focus {
+            color:            @blue_hover;
+            background-color: #ffffff;
+        }
+    }
+    
+    &-white--blue {
+        &:extend(.btn);
+        color:            @blue;
+        background-color: #ffffff;
+        
+        @media screen and (max-width: (@big_width)) {
+            color:            #ffffff;
+            background-color: @blue;
+        }
+        
+        &:hover,
+        &:focus {
+            color:            @blue_hover;
+            background-color: #ffffff;
+            
+            @media screen and (max-width: (@big_width)) {
+                color:            #ffffff;
+                background-color: @blue_hover;
+            }
+        }
+    }
+    
+    &-hide {
+        display: none !important;
+        
+        @media screen and (max-width: (@big_width)) {
+            display: block !important;
+        }
+    }
+    
+    .footer .btn-bordered--gray {
+        width:     100%;
+        max-width: 92px;
+        height:    54px;
+        border:    1px solid @blue;
+        outline:   1px solid @blue;
+        color:     @blue;
+        margin:    8px 0 0 26px;
+        display:   inline-block;
+        
+        &:hover, &:focus {
+            color:      #ffffff;
+            outline:    none;
+            background: @blue;
+        }
+        
+        @media screen and (max-width: (@big_tablet)) {
+            margin:    15px 0 0 0;
+            max-width: 256px;
+        }
+        
+        @media screen and (max-width: (@mobile)) {
+            max-width: 100%;
+        }
+    }
+}
+
+.link {
+    transition: all 0.125s ease-out;
+    color:      @blue;
+    font-size:  initial;
+    cursor:     pointer;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    @media screen and (max-width: (@tablet)) {
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+.no-scroll {
+    max-height: 100%;
+    overflow:   hidden;
+}
+
+.padding-block {
+    padding-top: 110px;
+    
+    @media screen and (max-width: (@mid_mobile)) {
+        padding-top: 90px;
+    }
+}
+

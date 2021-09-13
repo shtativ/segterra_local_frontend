@@ -1,0 +1,59 @@
+@import "variables";
+
+body, html {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    font-family:             @main_font;
+    line-height:             @main_line_height;
+    font-size:               @main_font_size;
+    font-weight:             @main_font_weight;
+    color:                   @text;
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+ul {
+    margin:  0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:           currentColor;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    background:  none;
+    border:      none;
+    color:       @text !important;
+    font-family: @main_font !important;
+}
+
+input::placeholder {
+    color: currentColor;
+}
+
+// remove clear cross in ie
+input::-ms-clear {
+    display: none;
+}
+
+// remove red border in ie
+input:invalid {
+    outline: none;
+}

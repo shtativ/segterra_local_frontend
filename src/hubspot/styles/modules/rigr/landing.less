@@ -1,0 +1,288 @@
+@import "../../utils/rigr/common";
+
+// description section begin
+.description {
+    background-color: @light_blue;
+    position:         relative;
+    
+    .container, .container-content {
+        padding-bottom: 80px;
+        @media screen and (max-width: (1480px)) {
+            position: static;
+        }
+        
+        @media screen and (max-width: (@tablet)) {
+            padding-bottom: 60px;
+        }
+    }
+    
+    &__img {
+        position:        absolute;
+        left:            0;
+        top:             0;
+        bottom:          0;
+        width:           525px;
+        height:          100%;
+        background:      url("../assets/img/rigr/carton.png") 50% 50% no-repeat;
+        background-size: cover;
+        
+        @media screen and (max-width: (@desktop)) {
+            width: 430px;
+        }
+        
+        @media screen and (max-width: (1000px)) {
+            height: 300px;
+            width:  100%;
+        }
+        
+    }
+    
+    &__wrapper {
+        max-width:    670px;
+        width:        100%;
+        margin-left:  auto;
+        padding-left: 131px;
+        
+        @media screen and (max-width: (1000px)) {
+            max-width: 100%;
+            padding:   300px 0 0;
+        }
+    }
+    
+    &__title {
+        text-align:    left;
+        margin-bottom: 33px;
+        @media screen and (max-width: (1000px)) {
+            text-align: center;
+        }
+        
+        @media screen and (max-width: (@big_mobile)) {
+            margin-bottom: 25px;
+        }
+    }
+    
+    &__text {
+        text-align: left;
+        @media screen and (max-width: (1000px)) {
+            text-align: center;
+        }
+    }
+    
+    &__btn {
+        margin-left: 0;
+        margin-top:  44px;
+        @media screen and (max-width: (1000px)) {
+            margin: 34px auto 0;
+        }
+        
+        @media screen and (max-width: (@mobile)) {
+            width: 100%;
+        }
+    }
+}
+
+// description section end
+
+// products section begin
+.products {
+    
+    &__title {
+        margin-bottom: 60px;
+        @media screen and (max-width: (@tablet)) {
+            margin-bottom: 50px;
+        }
+    }
+    
+    &__list {
+        display:         flex;
+        justify-content: space-between;
+        flex-wrap:       wrap;
+        margin:          0 -20px;
+        width:           100%;
+        
+        @media screen and (max-width: (@tablet)) {
+            flex-direction: column;
+            margin:         0;
+            
+        }
+    }
+    
+    &__item {
+        width:          24%;
+        padding:        0 15px;
+        display:        flex;
+        flex-direction: column;
+        align-items:    center;
+        
+        &:last-child {
+            @media screen and (max-width: (@tablet)) {
+                padding-bottom: 0;
+            }
+        }
+        
+        @media screen and (max-width: (@big_tablet)) {
+            width:  50%;
+            margin: 0 auto 44px;
+        }
+        
+        @media screen and (max-width: (@tablet)) {
+            width:   100%;
+            padding: 0;
+        }
+        
+        @media screen and (max-width: (@mid_mobile)) {
+            width: 100%;
+        }
+    }
+    
+    &__icon {
+        display: block;
+        width:   136px;
+        height:  136px;
+    }
+    
+    &__num {
+        width:           40px;
+        height:          40px;
+        display:         flex;
+        justify-content: center;
+        align-items:     center;
+        color:           #ffffff;
+        background:      @text;
+        font-family:     "Open Sans", Arial, sans-serif;
+        font-size:       18px;
+        font-weight:     700;
+        line-height:     normal;
+        border-radius:   50%;
+        margin-top:      12px;
+    }
+    
+    &__text {
+        color:       @text;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size:   18px;
+        font-weight: 500;
+        line-height: 1.36;
+        text-align:  center;
+        width:       100%;
+        
+        a {
+            color:           #ffffff;
+            text-decoration: underline;
+        }
+    }
+    
+    &__subtitle {
+        color:       @text;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size:   18px;
+        text-align:  center;
+        font-weight: bold;
+        width:       100%;
+        max-width:   250px;
+        min-height:  65px;
+        margin-top:  8px;
+        
+        @media screen and (max-width: (@tablet)) {
+            margin-top: 15px;
+        }
+        
+        @media screen and (max-width: (@tablet)) {
+            min-height:    100%;
+            margin-bottom: 14px;
+        }
+    }
+    
+    &__btn {
+        width:  200px;
+        margin: 67px auto 0;
+        
+        @media screen and (max-width: (@tablet)) {
+            margin-top: 0;
+        }
+        
+        @media screen and (max-width: (@mobile)) {
+            width: 100%;
+        }
+    }
+}
+
+// products section end
+
+// form section begin
+.sign-up {
+    background-color: @light_blue;
+    display:          flex;
+    align-items:      center;
+    flex-direction:   column;
+    
+    &__title {
+        margin-bottom: 52px;
+    }
+    
+    &__btn {
+        width:      94px;
+        margin-top: 63px;
+        @media screen and (max-width: (@tablet)) {
+            margin-top: 44px;
+            width:      100%;
+        }
+    }
+}
+
+// form section end
+
+
+// for hubspot
+
+//.sign-up .hs-button {
+//    width: 94px!important;
+//    color: #ffffff!important;
+//    -webkit-transition: all 0.2s ease-out;
+//    -o-transition: all 0.2s ease-out;
+//    transition: all 0.2s ease-out;
+//    -webkit-box-sizing: border-box;
+//    box-sizing: border-box;
+//    font-size: 14px;
+//    font-weight: 700;
+//    line-height: 60px;
+//    height: 60px;
+//    cursor: pointer;
+//    text-transform: uppercase;
+//    background-color: #12a0d2;
+//    border: 0;
+//    border-radius: 0;
+//    font-family: "Open Sans", Arial, sans-serif;
+//    text-decoration: none;
+//    display: block;
+//    padding: 0 15px;
+//    outline: none;
+//    margin: 0 auto;
+//    letter-spacing: 0.08em;
+//    text-align: center;
+//    white-space: nowrap;
+//    -o-text-overflow: ellipsis;
+//    text-overflow: ellipsis;
+//}
+//.sign-up .hs-button:hover,
+//.sign-up .hs-button:focus {
+//    text-decoration: none;
+//    background-color: #1cb8ef;
+//}
+//.sign-up .hs-button:disabled {
+//    cursor: default;
+//    opacity: 0.3;
+//    background-color: #babcbe;
+//}
+//@media screen and (max-width: 768px) {
+//    .sign-up .hs-button {
+//        padding: 0 16px;
+//    }
+//}
+//
+//@media screen and (max-width: 768px) {
+//    .sign-up .hs-button {
+//        margin-top: 44px!important;
+//        width: 100%;
+//    }
+//}

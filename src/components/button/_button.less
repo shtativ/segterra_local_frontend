@@ -1,0 +1,603 @@
+@import '../../styles/utils/variables';
+
+// this styles only for the frontify structure
+//**********************************************
+
+/*temp styles BEGIN---*/
+
+/*temp btn-container*/
+.btn-wrap {
+    display:     flex;
+    flex-wrap:   wrap;
+    align-items: baseline;
+    width:       auto;
+    
+    &__line {
+        display:    flex;
+        flex-basis: 100%;
+        flex-wrap:  wrap;
+        padding:    12px 0;
+        
+        button {
+            margin-top:    20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*---temp styles END*/
+
+/*btn-primary*/
+.btn-primary {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    color:            #ffffff;
+    border-style:     hidden;
+    border-color:     @primary;
+    background-color: @primary;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #ffffff;
+        border-color:     @primary--hover;
+        background-color: @primary--hover;
+        text-decoration:  none;
+    }
+    
+    &:active {
+        color:            @primary--active-text;
+        border-color:     @primary--active;
+        background-color: @primary--active;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:            #ffffff;
+            border-color:     @primary;
+            background-color: @primary;
+            cursor:           default;
+        }
+        
+    }
+}
+
+.btn-primary-glass {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    color:            @primary;
+    border:           1px solid @primary;
+    background-color: transparent;
+    flex:             none;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #ffffff;
+        border-color:     @primary--hover;
+        background-color: @primary--hover;
+    }
+    
+    &:active {
+        color:            @primary--active-text;
+        border-color:     @primary--active;
+        background-color: @primary--active;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:            @primary;
+            border:           1px solid @primary;
+            background-color: transparent;
+            cursor:           default;
+        }
+    }
+}
+
+.btn-primary-glass--check {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    border:           1px solid @gray6;
+    background-color: transparent;
+    flex:             none;
+    cursor:           default;
+    color:            @gray1;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        border-color: @gray6;
+        background:   transparent;
+        cursor:       default;
+    }
+    
+}
+
+/*btn-secondary*/
+.btn-secondary {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    border-style:     hidden;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    color:            #4b555f;
+    border-color:     @gray7;
+    background-color: @gray7;
+    text-align:       center;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #4b555f;
+        border-color:     @gray4;
+        background-color: @gray4;
+    }
+    
+    &:active {
+        color:            @gray2;
+        border-color:     @gray6;
+        background-color: @gray6;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:            #4b555f;
+            border:           @gray7;
+            background-color: @gray7;
+            cursor:           default;
+        }
+    }
+}
+
+.btn-secondary-glass {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    text-align:       center;
+    color:            @gray3;
+    border:           1px solid @gray5;
+    background-color: transparent;
+    flex:             none;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            @gray3;
+        border-color:     @gray4;
+        background-color: @gray4;
+    }
+    
+    &:active {
+        color:            @gray3;
+        border-color:     @gray6;
+        background-color: @gray6;
+    }
+    
+    &--disabled,
+    &:disabled {
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:            @gray3;
+            border:           1px solid @gray5;
+            background-color: transparent;
+            cursor:           default;
+        }
+    }
+}
+
+.btn-secondary--dark {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    border-style:     hidden;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    text-align:       center;
+    color:            #ffffff;
+    border-color:     @gray2;
+    background-color: @gray2;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #ffffff;
+        border-color:     @gray3;
+        background-color: @gray3;
+    }
+    
+    &:active {
+        color:            #37414b;
+        border-color:     #4b555f;
+        background-color: #4b555f;
+    }
+}
+
+/*btn-special*/
+.btn-special {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    border-style:     hidden;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    padding:          0 20px;
+    color:            #ffffff;
+    border-color:     @green;
+    background-color: @green;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #ffffff;
+        border-color:     @green--hover;
+        background-color: @green--hover;
+    }
+    
+    &:active {
+        color:            @green--active-text;
+        border-color:     @green--active;
+        background-color: @green--active;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:            #fff;
+            border-color:     @green;
+            background-color: @green;
+            cursor:           default;
+        }
+        
+    }
+}
+
+.btn-special-glass {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    color:            #ffffff;
+    border:           1px solid @green;
+    background-color: transparent;
+    flex:             none;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #ffffff;
+        border-color:     @green--hover;
+        background-color: @green--hover;
+    }
+    
+    &:active {
+        color:            #ffffff;
+        border-color:     @green--active;
+        background-color: @green--active;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            cursor:           default;
+            color:            #ffffff;
+            border:           1px solid @green;
+            background-color: transparent;
+        }
+    }
+}
+
+/* red btn */
+.btn-danger {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    border-style:     hidden;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    color:            #fff;
+    border-color:     @red;
+    background-color: @red;
+    padding:          0 20px;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #fff;
+        border-color:     @red--hover;
+        background-color: @red--hover;
+    }
+    
+    &:active {
+        color:            @red--active-text;
+        border-color:     @red--active;
+        background-color: @red--active;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:            #ffffff;
+            border-color:     @red;
+            background-color: @red;
+            cursor:           default;
+        }
+    }
+}
+
+.btn-danger--light {
+    transition:       all 0.2s ease-out;
+    border-radius:    3px;
+    display:          inline-block;
+    width:            auto;
+    font-weight:      600;
+    letter-spacing:   0.23px;
+    box-sizing:       border-box;
+    line-height:      36px;
+    cursor:           pointer;
+    border-style:     hidden;
+    text-decoration:  none;
+    font-size:        14px;
+    height:           36px;
+    padding:          0 20px;
+    color:            #fff;
+    border-color:     #fa3c3c;
+    background-color: #fa3c3c;
+    margin:           0 10px;
+    
+    @media screen and (max-width: (@big_mobile)) {
+        margin: 0 8px;
+    }
+    
+    &:hover,
+    &:focus {
+        color:            #fff;
+        border-color:     @red--hover;
+        background-color: @red--hover;
+    }
+    
+    &:active {
+        color:            #5a0000;
+        border-color:     @red--active;
+        background-color: @red--active;
+    }
+}
+
+/*button sizes */
+
+.btn--large {
+    font-size:   16px;
+    height:      40px;
+    line-height: 40px;
+    padding:     0 22px;
+}
+
+.btn--small {
+    font-size:   12px;
+    height:      28px;
+    line-height: 28px;
+    padding:     0 12px;
+}
+
+button {
+    outline: none;
+}
+
+/*!*round buttons BEGIN---*!
+.btn-round {
+    transition:       all 0.2s ease-out;
+    border-radius:    20px;
+    display:          inline-block;
+    width:            auto;
+    min-width:        166px;
+    font-weight:      600;
+    letter-spacing:   0.14px;
+    color:            @gray3;
+    box-sizing:       border-box;
+    line-height:      normal;
+    cursor:           pointer;
+    border:           1px solid @gray5;
+    background-color: transparent;
+    text-decoration:  none;
+    outline:          none;
+    padding:          0 22px;
+    margin:           11px;
+    font-size:        14px;
+    height:           40px;
+    
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color:           @primary;
+        border:          1px solid @primary;
+    }
+    
+    &--disabled,
+    &:disabled {
+        cursor:  default;
+        opacity: 0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            color:  @gray3;
+            border: 1px solid @gray5;
+            cursor: default;
+        }
+    }
+    
+    @media only screen and (max-width: (@big_mobile)) {
+        min-width: 136px;
+        padding:   0 6px;
+        margin:    8px;
+    }
+    
+}
+
+.btn-round--mobile {
+    min-width: 136px;
+    padding:   0 6px;
+    
+    & + .btn-round--mobile {
+        margin-left: 16px;
+    }
+}
+
+!*---round buttons END*!*/

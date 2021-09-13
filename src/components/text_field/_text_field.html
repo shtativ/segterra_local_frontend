@@ -1,0 +1,58 @@
+<!--Component Text Field-->
+<form class="wrapper-textfield" autocomplete="off">
+    
+    <!--Placeholder-->
+    <div class="form-field">
+        <label class="label" for="form-field">Label</label>
+        <input class="form-control" id="form-field" name="form-field" placeholder="Please type here" type="text">
+    </div>
+    
+    <!--Helper text-->
+    <div class="form-field">
+        <label class="label" for="form-field3">Label</label>
+        <input class="form-control" id="form-field3" name="form-field" placeholder="Please type here" type="text" value="Please type here">
+        <ul class="helper-text">
+            <li>Helper text</li>
+        </ul>
+    </div>
+    
+    <!--Error message-->
+    <div class="form-field">
+        <label class="label" for="form-field4">Label</label>
+        <input class="form-control incorrect-value-input"
+               id="form-field4"
+               name="placeholder"
+               placeholder="Placeholder"
+               type="text"
+               value="Text input">
+        <ul class="error-message">
+            <li>Error message</li>
+        </ul>
+    </div>
+    
+    <!--Disabled-->
+    <div class="form-field disabled">
+        <label class="label" for="form-field5">Label, disabled</label>
+        <input class="form-control" disabled="disabled" id="form-field5" name="form-field" placeholder="Placeholder text, disabled" type="text">
+    </div>
+    
+    <!--custom select-->
+    <div class="dropdown--custom">
+        <label class="label">Label, dropdown</label>
+        <div class="dropdown-wrapper">
+            <div class="dropdown__select dropdown__selected">Please select</div>
+            <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-id="1">Item 1</li>
+                <li class="dropdown__list-item" data-id="2">Item 2</li>
+                <li class="dropdown__list-item" data-id="3">Item 3</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Search-->
+    <div class="search-form" enctype="multipart/form-data" id="search_form">
+        <input class="search-submit" type="submit" value="">
+        <input class="form-control typeahead" placeholder="Search" type="text">
+    </div>
+
+</form>

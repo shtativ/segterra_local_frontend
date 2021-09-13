@@ -1,0 +1,108 @@
+@import "../../utils/giveaway/variables";
+
+.welcome {
+    display: flex;
+    width:   100%;
+    
+    @media (max-width: (@small_screen_width)) {
+        flex-wrap: wrap;
+    }
+}
+
+.promo-img {
+    width:    37.5%;
+    position: relative;
+    overflow: hidden;
+    
+    @media (max-width: (@small_screen_width)) {
+        width:  100%;
+        height: 300px;
+    }
+}
+
+.promo-img img {
+    position:   absolute;
+    display:    block;
+    min-width:  100%;
+    min-height: 100%;
+    width:      auto;
+    height:     auto;
+    left:       50%;
+    top:        0;
+    transform:  translate(-50%, 0);
+    
+    @media (max-width: (@small_screen_width)) {
+        width: 100%;
+    }
+}
+
+.promo-text {
+    background: @white_smoke;
+    width:      62.5%;
+    padding:    calc((@section_padding) - 5px) 0 calc((@section_padding) - 5px) @section_padding;
+    
+    @media (min-width: (@screen_width)) {
+        padding: calc((@section_padding_max) - 5px) 0 calc((@section_padding_max) - 5px) @section_padding_max;
+    }
+    
+    @media (max-width: (@screen_width)) {
+        padding-right: @content_margin;
+    }
+    
+    @media (max-width: 602px) {
+        padding-top:    calc((@section_padding_min) - 5px);
+        padding-bottom: @section_padding_min;
+    }
+    
+    @media (max-width: (@small_screen_width)) {
+        width:        100%;
+        padding-left: @content_margin;
+    }
+}
+
+.promo-text__wrapper {
+    max-width: 670px;
+}
+
+.promo__desc {
+    margin-top: 1.66vw;
+    
+    @media (min-width: (@screen_width)) {
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 905px) {
+        margin-top: 15px;
+    }
+}
+
+.promo-list {
+    margin-top:   2.07vw;
+    padding-left: 20px;
+    
+    @media (min-width: (@screen_width)) {
+        margin-top: 25px;
+    }
+    
+    @media (max-width: (@small_screen_width)) {
+        margin-top: 15px;
+    }
+}
+
+.promo-list__item {
+    list-style-type: disc;
+    line-height:     1.33;
+    margin-bottom:   10px;
+}
+
+.promo__contacts {
+    margin-top: 2.49vw;
+    
+    @media (min-width: (@screen_width)) {
+        margin-top: 30px;
+    }
+}
+
+.promo__contacts_bold {
+    font-weight: 600;
+}

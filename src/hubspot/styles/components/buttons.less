@@ -1,0 +1,42 @@
+@import "../utils/giveaway/variables";
+
+.btn {
+    cursor:        pointer;
+    display:       inline-block;
+    background:    none;
+    border:        none;
+    border-radius: 3px;
+    padding:       0 20px;
+    font-size:     @info_font_size;
+    line-height:   33px;
+    transition:    0.2s;
+    height:        36px;
+}
+
+.btn_primary {
+    font-weight:      600;
+    color:            #fff;
+    background-color: #00aaff;
+    margin-top:       30px;
+    
+    @media (max-width: (@small_screen_width)) {
+        margin-top: 5px;
+    }
+}
+
+.btn_primary:hover {
+    background-color: #46c3ff;
+}
+
+.btn_primary:active {
+    color:            @primary--active-text;
+    background-color: @primary--active;
+}
+
+.btn:disabled {
+    opacity: 0.3;
+}
+
+.btn:disabled:hover {
+    background-color: #00aaff;
+}

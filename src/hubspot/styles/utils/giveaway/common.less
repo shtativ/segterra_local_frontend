@@ -1,0 +1,16 @@
+@import "variables";
+@import "adjustments";
+
+.container {
+    max-width: @content_width;
+    margin:    0 auto;
+    
+    @media (max-width: (@screen_width)) {
+        padding: 0 @content_margin;
+    }
+}
+
+.text-align_center {
+    text-align: center;
+}
+

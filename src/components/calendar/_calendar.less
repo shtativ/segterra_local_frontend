@@ -1,0 +1,231 @@
+@import "../../styles/utils/variables";
+
+.datepickers-container {
+    
+    .datepicker {
+        border-radius: 0;
+        border:        none;
+        font-family:    "Open Sans", Tahoma, Helvetica, Arial, sans-serif;
+        
+        &--pointer {
+            display: none;
+        }
+        
+        &--nav {
+            padding:       0 0 0 14px;
+            display:       flex;
+            background:    @primary;
+            color:         #fff;
+            font-weight:   600;
+            border-bottom: 0;
+            
+            &-action {
+                order: 5;
+                
+                &:hover {
+                    background: none;
+                }
+                
+                &:focus {
+                    outline: none;
+                }
+                
+                svg {
+                    transform: scale(1.2);
+                }
+                
+                path {
+                    stroke: #fff;
+                }
+            }
+            
+            &-title {
+                padding:      0;
+                color:        #fff;
+                margin-right: auto;
+                line-height:  50px;
+                position:     relative;
+                font-size:    18px;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left:      calc(100% + 8px);
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 5px 5px 0 5px;
+                    border-color: #ffffff transparent transparent transparent;
+                }
+                
+                &:hover {
+                    background: none;
+                }
+                
+                &:focus {
+                    outline: none;
+                }
+                
+                i {
+                    color: #fff;
+                }
+            }
+            
+        }
+        
+        &--content {
+            padding: 0;
+        }
+        
+        &--days-names {
+            margin:          0;
+            line-height:     40px;
+            background:      @gray4;
+            justify-content: space-between;
+            padding-left:    14px;
+            padding-right:   14px;
+        }
+        
+        &--day-name {
+            color:       @gray2;
+            font-weight: 600;
+            flex:        0 0 0;
+        }
+        
+        &--cells {
+            &-months {
+                justify-content: center;
+                margin-top:      55px;
+            }
+            
+            &-years {
+                justify-content: center;
+                margin-top:      55px;
+            }
+        }
+        
+        &--cell {
+            border-radius: 50%;
+            color:         @gray1;
+            width:         40px;
+            height:        40px;
+            
+            &.-current- {
+                color:       @primary;
+                font-weight: 600;
+            }
+            
+            &.-selected- {
+                font-weight: 700;
+                background:  @primary;
+                color:       #fff;
+                
+                &.-focus- {
+                    font-weight: 700;
+                    background:  @primary;
+                    color:       #fff;
+                }
+    
+                &.-current- {
+                    font-weight: 700;
+                    background:  @primary;
+                    color:       #fff;
+                }
+            }
+            
+            &.-focus- {
+                background: @blue1;
+            }
+            
+            &.-other-month- {
+                color: @gray6;
+            }
+            
+            &.-other-decade- {
+                color: @gray1;
+                
+                &:hover {
+                    color: @gray1;
+                }
+            }
+            
+            &-month, &-year {
+                margin: 0 7px;
+            }
+        }
+        
+        &--buttons {
+            border-top:      0;
+            padding:         0 14px;
+            justify-content: flex-end;
+        }
+        
+        &--button {
+            color:          @primary;
+            height:         auto;
+            padding-top:    13px;
+            padding-bottom: 16px;
+            flex:           0;
+            margin-left:    34px;
+            text-transform: uppercase;
+            
+            &:hover {
+                color:      @primary;
+                background: none;
+            }
+        }
+    
+        .form-control.calendar,
+        .container-test .label{
+            margin-left: 10px;
+        }
+        
+        @media screen and (max-width: 400px) {
+            top: 62px !important;
+            left: 10px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-control.calendar {
+        width: 250px;
+    }
+}
+
+.calendar__icon{
+    position: relative;
+}
+.calendar__icon::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: @primary transparent transparent transparent;
+}
+
+.calendar{
+    cursor: pointer;
+    
+    &::-webkit-input-placeholder {
+        color: @gray1;
+    }
+    
+    &::-moz-placeholder {
+        color: @gray1;
+    }
+    
+    &:-ms-input-placeholder {
+        color: @gray1;
+    }
+    
+    &:-moz-placeholder {
+        color: @gray1;
+    }
+    
+}
+

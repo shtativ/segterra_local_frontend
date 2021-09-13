@@ -1,0 +1,112 @@
+@import "../../../styles/utils/variables";
+
+/*          Goal cards  */
+.card-list--goal {
+    margin:    0 -15px;
+    display:   flex;
+    flex-wrap: wrap;
+    
+    @media screen and (max-width: @big_tablet) {
+        display: block;
+    }
+}
+
+.goal-card {
+    position:      relative;
+    width:         270px;
+    height:        120px;
+    margin:        0 15px 30px;
+    border-radius: 6px;
+    
+    &__bg--1 {
+        background:    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                       url('../assets/img/card/goal1.jpg') no-repeat left top/cover;
+    }
+    
+    &__bg--2 {
+        background:    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                       url('../assets/img/card/goal2.jpg') no-repeat left top/cover;
+    }
+    
+    &__bg--3 {
+        background:    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                       url('../assets/img/card/goal3.jpg') no-repeat left top/cover;
+    }
+    
+    &__bg--4 {
+        background:    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                       url('../assets/img/card/goal4.jpg') no-repeat left top/cover;
+    }
+    
+    @media screen and (max-width: @big_tablet) {
+        margin: 0 auto 30px;
+    }
+    
+    @media screen and (max-width: @big_tablet) {
+        width:  288px;
+        height: 128px;
+    }
+    
+    .goal-card__label {
+        width:       100%;
+        height:      100%;
+        padding:     30px 30px 23px;
+        display:     flex;
+        align-items: flex-end;
+    }
+    
+    .goal-card__input {
+        display: none;
+    }
+    
+    .goal-card__checkbox {
+        position:         absolute;
+        cursor:           pointer;
+        top:              10px;
+        left:             auto;
+        right:            10px;
+        width:            36px;
+        height:           36px;
+        border:           2px solid #fff;
+        border-radius:    50%;
+        box-shadow:       0 4px 15px 1px rgba(0, 0, 0, 0.35);
+        background-color: rgba(255, 255, 255, 0.5);
+        display:          flex;
+        justify-content:  center;
+        align-items:      center;
+        
+        .icon-checked {
+            display: none;
+        }
+    }
+    
+    .goal-card__input:checked ~ .goal-card__checkbox {
+        background:   @primary;
+        border-color: @primary;
+        box-shadow:   none;
+        
+        .icon-checked {
+            fill:    #fff;
+            display: block;
+        }
+    }
+    
+    .goal-card__title {
+        color:       #fff;
+        font-size:   20px;
+        line-height: 1.4;
+    }
+    
+    .goal-card__overlay {
+        position:      absolute;
+        border-radius: 6px;
+        top:           0;
+        left:          0;
+        width:         100%;
+        height:        100%;
+    }
+    
+    .goal-card__input:checked ~ .goal-card__overlay {
+        box-shadow: 0 0 0 2px @primary;
+    }
+}

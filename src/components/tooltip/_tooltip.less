@@ -1,0 +1,98 @@
+@import '../../styles/utils/variables';
+
+.tooltip {
+    //top:              calc(~'100% + 5px');
+    width:            288px;
+    padding:          16px 20px;
+    position:         absolute;
+    border-radius:    6px;
+    background-color: #ffffff;
+    z-index:          11;
+    left:             0;
+    top:              25px;
+    flex-shrink:      0;
+    box-shadow:       0 4px 12px 1px rgba(35, 45, 55, 0.15);
+    cursor:           default;
+    display:          none;
+    transition:       opacity 0.2s;
+    
+    @media screen and (max-width: @tablet) {
+        position:  fixed;
+        top:       10%;
+        left:      50%;
+        transform: translateX(-50%);
+        width:     288px;
+    }
+    
+    &-hover {
+        position: relative;
+    }
+    
+    &-icon {
+        position:         relative;
+        width:            14px;
+        height:           14px;
+        top:              3px;
+        left:             5px;
+        cursor:           pointer;
+        background-image: url("../../assets/img/tooltip/tooltip-icon.png");
+        
+        &:hover {
+            + .tooltip-hover > .tooltip {
+                display: block;
+                
+                @media screen and (max-width: @tablet) {
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    
+    &-wrap {
+        justify-content: start;
+        display:         flex;
+    }
+    
+    &__title {
+        color:         @gray1;
+        font-size:     14px;
+        font-weight:   700;
+        margin-bottom: 5px;
+        display:       block;
+        
+        @media screen and (max-width: @tablet) {
+            white-space: normal;
+        }
+    }
+    
+    &__text {
+        color:       @gray1;
+        font-size:   14px;
+        line-height: 18px;
+        display:     block;
+    }
+    
+    &.show {
+        display: block;
+    }
+}
+
+.screen {
+    background: #000000;
+    position:   fixed;
+    top:        0;
+    right:      0;
+    bottom:     0;
+    left:       0;
+    opacity:    0;
+    visibility: hidden;
+    z-index:    10;
+    transition: all 0.15s ease-out;
+    
+    &.is-visible {
+        visibility: visible;
+        opacity:    0.6;
+    }
+}
+

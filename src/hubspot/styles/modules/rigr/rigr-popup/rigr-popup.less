@@ -1,0 +1,194 @@
+@import "../../../utils/rigr/common";
+
+// rigr-popup begin
+
+.header--fixed {
+    position: fixed;
+    top:      0;
+    width:    100%;
+    z-index:  5;
+}
+
+.header-blue {
+    order:            0;
+    background-color: @blue;
+    padding:          20px 0;
+    position:         relative;
+}
+
+.top-section {
+    background: @light_blue;
+    padding:    0 16px;
+    
+    &__container {
+        display:         flex;
+        justify-content: space-between;
+        align-items:     center;
+        height:          72px;
+        padding:         0 8px;
+        @media screen and (max-width: (1170px)) {
+            padding: 0;
+        }
+    }
+    
+    &__title {
+        margin:      0;
+        font-size:   22px;
+        font-family: "Open Sans", Arial, sans-serif;
+        
+        @media screen and (max-width: (@tablet)) {
+            font-size: 18px;
+        }
+    }
+    
+    &__btn {
+        width:          170px;
+        height:         38px;
+        line-height:    1.93;
+        letter-spacing: .05em;
+        margin:         0;
+    }
+    
+    &__close {
+        cursor:         pointer;
+        position:       relative;
+        right:          18px;
+        width:          18px;
+        height:         18px;
+        stroke:         @gray_5;
+        stroke-width:   2;
+        stroke-linecap: round;
+    }
+}
+
+.rigr-popup {
+    .popup__container {
+        padding:   0 16px;
+        max-width: 1170px;
+        margin:    0 auto;
+        position:  relative;
+    }
+    
+    .footer {
+        background: #ffffff;
+    }
+    
+    .popup-overlay {
+        padding:    0;
+        background: #ffffff;
+        text-align: left;
+        
+        @media screen and (max-width: (@tablet)) {
+            padding: 0;
+        }
+        
+        &__wrapper {
+            padding:    253px 0 78px;
+            background: #ffffff;
+            @media screen and (max-width: (@tablet)) {
+                padding: 230px 0 56px;
+            }
+        }
+        
+        &__inner {
+            margin-bottom: 64px;
+            @media screen and (max-width: (@tablet)) {
+                margin-bottom: 56px;
+            }
+        }
+        
+        &__title {
+            font-size:   22px;
+            line-height: 1.36;
+            text-align:  left;
+            max-width:   570px;
+            font-weight: 400;
+            font-family: "Open Sans", Arial, sans-serif;
+            margin:      0 0 18px;
+            @media screen and (max-width: (@tablet)) {
+                text-align: center;
+            }
+            
+            &--large {
+                font-family:   Arvo, Arial, sans-serif;
+                font-size:     28px;
+                margin-bottom: 14px;
+            }
+        }
+        
+        &__text {
+            width:       100%;
+            max-width:   570px;
+            color:       @text;
+            font-size:   18px;
+            line-height: 1.33;
+            text-align:  left;
+            font-family: "Open Sans", Arial, sans-serif;
+            word-break:  break-word;
+            margin:      22px 0 0;
+            @media screen and (max-width: (@tablet)) {
+                text-align: center;
+            }
+            
+            &--upper {
+                text-transform: uppercase;
+            }
+            
+            .popup-overlay__link {
+                color:       @blue;
+                font-weight: 400;
+                font-size:   medium;
+                line-height: inherit;
+            }
+        }
+        
+        &__link--sm {
+            color:       @blue;
+            font-size:   14px;
+            line-height: 2.25;
+            font-weight: 400;
+        }
+    }
+    
+    .name-block {
+        color:         @text;
+        margin-bottom: 58px;
+        
+        @media screen and (max-width: (@tablet)) {
+            margin-bottom: 52px;
+        }
+        
+        &__title {
+            font-family:   Arvo, Arial, sans-serif;
+            font-weight:   400;
+            font-size:     28px;
+            line-height:   1;
+            margin-bottom: 18px;
+        }
+        
+        &__date {
+            font-size:   18px;
+            line-height: 1.33;
+            font-family: "Open Sans", Arial, sans-serif;
+        }
+    }
+}
+
+.policy-popup, .terms-popup {
+    .popup-overlay__title {
+        @media screen and (max-width: (@tablet)) {
+            text-align: left;
+        }
+    }
+    
+    .popup-overlay__text {
+        @media screen and (max-width: (@tablet)) {
+            text-align: left;
+        }
+    }
+}
+
+// rigr-popup end
+
+
+

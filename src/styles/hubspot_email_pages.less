@@ -1,0 +1,153 @@
+@import "../rigr_blog/styles/utils/common";
+
+
+.email-subscribe__wrapper {
+    min-height:  760px;
+    background:  #fff;
+    padding-top: calc(70px - 1px);
+
+    @media only screen and (max-width: 630px) {
+        min-height: 500px;
+    }
+
+    .email-subscribe__container {
+        display:         flex;
+        flex-direction:  column;
+        justify-content: center;
+        width:           100%;
+        max-width:       770px;
+        text-align:      center;
+        padding:         169px 16px 195px;
+        margin:          0 auto;
+
+        @media only screen and (max-width: 630px) {
+            padding: 62px 14px 95px;
+        }
+    }
+
+    .envelope-icon {
+        width:  132px;
+        height: 112px;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 630px) {
+            width:  102px;
+            height: 86px;
+        }
+    }
+
+    .email-subscribe__title {
+        font-family:    'Open Sans', Arial, sans-serif;
+        font-size:      30px;
+        line-height:    1.44;
+        font-weight: 600;
+        color:          #232d37;
+        text-align:     center;
+        padding-top:    47px;
+        letter-spacing: 0.35px;
+        margin:         0;
+
+        @media only screen and (max-width: 630px) {
+            font-size:   24px;
+            padding-top: 26px;
+        }
+    }
+
+    .email-subscribe__text {
+        font-family:    'Open Sans', Arial, sans-serif;
+        font-size:      20px;
+        font-weight:    400;
+        letter-spacing: 0.33px;
+        line-height:    1.7;
+        color:          #232d37;
+        text-align:     center;
+        padding-top:    22px;
+
+        @media only screen and (max-width: 630px) {
+            font-size:      16px;
+            padding-top:    16px;
+            line-height:    1.5;
+            letter-spacing: 0.4px;
+        }
+    }
+
+    .email-subscribe__btn-block {
+        margin: 10px 0 0px;
+
+        @media only screen and (max-width: 630px) {
+            margin: 4px 0 0;
+        }
+
+        button {
+            margin-bottom: 0;
+            @media only screen and (max-width: 630px) {
+                width:       100%;
+                font-size:   14px;
+                line-height: 36px;
+                height:      36px;
+                max-width:   288px;
+            }
+        }
+    }
+
+    .email-subscribe__link {
+        font-size:      14px;
+        letter-spacing: 0.2px;
+        margin-top:     15px;
+
+        @media only screen and (max-width: 630px) {
+            font-size:      12px;
+            letter-spacing: 0.3px;
+            margin-top:     15px;
+        }
+    }
+}
+//test
+.star-rating__list {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 188px;
+    height: 26px;
+    z-index: 1;
+    padding: 0;
+}
+.star-rating__item {
+    width: 38px;
+    height: 100%;
+    font-size: 26px;
+    color: #C3C8CD;
+    text-align: center;
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.star-rating__item svg {
+    width: 26px;
+    height: 26px;
+}
+.star-rating__item--active {
+    color: #00AAFF;
+}
+.star-rating__item--half svg path:first-child{
+    fill: #00AAFF;
+}
+.star-rating__item--active svg path {
+    fill: #00AAFF;
+}
